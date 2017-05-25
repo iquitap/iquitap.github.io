@@ -6,17 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//iquit.top">
-  <title>Archives | Iquit</title>
+  <title>《GrabCut -- Interactive Foreground Extraction using Iterated Graph Cuts》阅读笔记 | Iquit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="偏激自闭，不易相处">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Iquit">
-<meta property="og:url" content="//iquit.top/archives/index.html">
+  <meta name="description" content="写在前面  这篇论文读完已经有一个礼拜左右，感觉收获很大，但是只能算浅读，所以现在在这里打算整理一下，方便理清思路。 功能介绍  Grab cut是基于graph cut实现的一个分割和抠图算法。它主要实现的功能有:  （1）在目标外面画上一个框之后，把目标框住，从而区分出foreground/background，然后可就可以完成初步的图像分割。  （2）grab cut同时提供了用户交互，用户">
+<meta name="keywords" content="grabcut,opencv">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《GrabCut -- Interactive Foreground Extraction using Iterated Graph Cuts》阅读笔记">
+<meta property="og:url" content="//iquit.top/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/index.html">
 <meta property="og:site_name" content="Iquit">
-<meta property="og:description" content="偏激自闭，不易相处">
+<meta property="og:description" content="写在前面  这篇论文读完已经有一个礼拜左右，感觉收获很大，但是只能算浅读，所以现在在这里打算整理一下，方便理清思路。 功能介绍  Grab cut是基于graph cut实现的一个分割和抠图算法。它主要实现的功能有:  （1）在目标外面画上一个框之后，把目标框住，从而区分出foreground/background，然后可就可以完成初步的图像分割。  （2）grab cut同时提供了用户交互，用户">
+<meta property="og:image" content="//iquit.top/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/1.png">
+<meta property="og:image" content="//iquit.top/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/2.png">
+<meta property="og:image" content="//iquit.top/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/gongshi.png">
+<meta property="og:updated_time" content="2017-05-25T03:09:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Iquit">
-<meta name="twitter:description" content="偏激自闭，不易相处">
+<meta name="twitter:title" content="《GrabCut -- Interactive Foreground Extraction using Iterated Graph Cuts》阅读笔记">
+<meta name="twitter:description" content="写在前面  这篇论文读完已经有一个礼拜左右，感觉收获很大，但是只能算浅读，所以现在在这里打算整理一下，方便理清思路。 功能介绍  Grab cut是基于graph cut实现的一个分割和抠图算法。它主要实现的功能有:  （1）在目标外面画上一个框之后，把目标框住，从而区分出foreground/background，然后可就可以完成初步的图像分割。  （2）grab cut同时提供了用户交互，用户">
+<meta name="twitter:image" content="//iquit.top/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Iquit" type="application/atom+xml">
   
@@ -162,36 +168,42 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/" class="archive-article-date">
-  	<time datetime="2017-05-25T01:43:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-25</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/">《GrabCut -- Interactive Foreground Extraction using Iterated Graph Cuts》阅读笔记</a>
+    <h1 class="article-title" itemprop="name">
+      《GrabCut -- Interactive Foreground Extraction using Iterated Graph Cuts》阅读笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/" class="archive-article-date">
+  	<time datetime="2017-05-25T01:43:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>  这篇论文读完已经有一个礼拜左右，感觉收获很大，但是只能算浅读，所以现在在这里打算整理一下，方便理清思路。</p>
+<h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><p>  Grab cut是基于graph cut实现的一个分割和抠图算法。它主要实现的功能有:<br>  （1）在目标外面画上一个框之后，把目标框住，从而区分出foreground/background，然后可就可以完成初步的图像分割。<br><img src="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/1.png" alt=""><br>  （2）grab cut同时提供了用户交互，用户可以通过画出一个大概的边界，从而人为的完成部分像素的指定，然后再次进行迭代，从而达到更理想的效果。<br><img src="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/2.png" alt=""></p>
+<h2 id="grab-cut"><a href="#grab-cut" class="headerlink" title="grab cut"></a>grab cut</h2><p>  上面我们已经说过了，Grab cut是基于graph cut实现的，这里的基于主要是指的是吉布斯能量公式和最小割算法模型。<br>  Graph Cuts中有两种顶点，也有两种边。<br>  第一种顶点和边是：第一种普通顶点对应于图像中的每个像素。<br>  每两个邻域顶点（对应于图像中每两个邻域像素）的连接就是一条边。这种边也叫n-links。</p>
+<p>  第二种顶点和边是：除图像像素外，还有另外两个终端顶点，<br>  叫S（source：源点，取源头之意）和T（sink：汇点，取汇聚之意）。<br>  每个普通顶点和这2个终端顶点之间都有连接，<br>  组成第二种边。这种边也叫t-links。</p>
+<p><strong> Gibbs energy </strong><br>  graph cut的目标和背景的模型是灰度直方图。</p>
+<p><img src="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/gongshi.png" alt=""><br>  z为图像数据，α为像素点的灰度值，0表示背景，1表示前景，h为对应数据描述的灰度直方图模型。<br>  E即为gibbs energy，第一项U(α,θ,z)为数据项，即为，表示的是不透明分布对图像数据的符合程度，<br>也可以理解成为一个像素被归类为某个目标的惩罚，所以他的计算值为某个像素属于不同的目标或者背景<br>的概率的负对数的累加和。那么，如果全部的像素都被正确划分为目标或者背景，那么这时候能量就是最小的。</p>
+<p>第二项V(α,z)为平滑项，在一些资料中也被描述成是边界项，体现邻域像素m和n之间不连续的惩罚。<br>如果如果两邻域像素差别很小，那么它属于同一个目标或者同一背景的可能性就很大，如果他们的差别很大，<br>那说明这两个像素很有可能处于目标和背景的边缘部分，则被分割开的可能性比较大，所以当两邻域像素差别越大，<br>能量越小。这里面的参数β由图像的对比度决定,常数γ为50是通过作者选取15张图片训练出的较好结果值。</p>
+<p>当能量功能确定之后，我们就可以用迭代能量最小化对图像进行分割了。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -207,252 +219,109 @@ var _hmt = _hmt || [];
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://iquit.top/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/24/jiudu1464-jiudu1468/" class="archive-article-date">
-  	<time datetime="2017-05-24T09:26:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-24</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/24/jiudu1464-jiudu1468/">jiudu1464 &amp; jiudu1468</a>
-    </h1>
+  
+    <a href="/2017/05/24/jiudu1464-jiudu1468/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">jiudu1464 &amp; jiudu1468</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "//iquit.top/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/", 
+    sourceId: "《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记",
+    productKey: "ea8811694f05425681f3c36dd18fdd3e",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">jiudu</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/22/poj1251/" class="archive-article-date">
-  	<time datetime="2017-05-22T12:50:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/22/poj1251/">poj1251(最小生成树)</a>
-    </h1>
+  <div id="SOHUCS" sid="《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "cyt1zDaiA"; 
+var conf = "prod_12826554bf6e64427ce7b9e5fd255993"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">poj</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/22/summer-timeline/" class="archive-article-date">
-  	<time datetime="2017-05-22T11:28:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/22/summer-timeline/">Summer Timeline</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/22/music-and-photo-test/" class="archive-article-date">
-  	<time datetime="2017-05-22T05:44:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/22/music-and-photo-test/">music and photo test</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">cc</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/22/My-first-post/" class="archive-article-date">
-  	<time datetime="2017-05-22T05:13:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/22/My-first-post/">My first post</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">quit</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/22/hello-world/" class="archive-article-date">
-  	<time datetime="2017-05-22T04:02:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -475,8 +344,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
