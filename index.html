@@ -187,7 +187,7 @@ var _hmt = _hmt || [];
         <p>重点是kmp。<br>印象中好像学过两次。。结果一开始A不出来。。今晚又学了一次。。<br><a href="http://blog.csdn.net/v_july_v/article/details/7041827" target="_blank" rel="external">csdn上的一篇kmp介绍博客</a></p>
 <p>上面这篇博文很好。<br>kmp算法重要的核心在于计算出next数组，然后通过next的值可以完成字符串的kmp匹配，next数组相当于最大长度表，即各个前后缀最大公共元素表向移动了一位。<br>也可以通过next数组完成循环字符串查找。</p>
 <p>本题题意：<br>给你一个字符串和它的长度，求这个字符串到末尾为止的循环子字符串的次数。<br>eg。aabaabaabaab，len(str)=12，到第二个a，a出现了两次，到第二个b，aab出现了两次，到第三个b，aab出现了3次，到第四个b，aab出现了4次。<br>所以输出 2 2    6 2     9 3     12 4</p>
-<p>解法：首先利用kmp算法求出开门炮数组吗，下面的代码里面给出了两种求解next数组的方法。然后用过next数组，即可求出每个子循环数组出现的次数。<br>具体kmp算法的过程可以查看上面csdn的那篇博客。</p>
+<p>解法：首先利用kmp算法求出next数组，下面的代码里面给出了两种求解next数组的方法。然后用过next数组，即可求出每个子循环数组出现的次数。<br>具体kmp算法的过程可以查看上面csdn的那篇博客。</p>
 <p>代码如下：<br></p>
         
           <a class="article-more-a" href="/2017/05/29/poj1961-kmp/#more">more >></a>
