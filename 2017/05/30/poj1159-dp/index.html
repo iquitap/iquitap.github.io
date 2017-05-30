@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//iquit.top">
-  <title>Tag: oj | Iquit</title>
+  <title>poj1159(dp) | Iquit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="偏激自闭，不易相处">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Iquit">
-<meta property="og:url" content="//iquit.top/tags/oj/index.html">
+  <meta name="description" content="一道考dp和lcs的题。poj1159题意：给一个字符串和它的长度，求插入的最小字符数，可以使整个字符串在插入之后成为一个回文字符串。 解法：dp[i][j]——从s[i]到s[j]所需要的最小解，初始化所有j==i||j==i+1的dp[i][j]递推公式：dp[i][j] = dp[i+1][j-1]                       if s[i]==s[j]">
+<meta name="keywords" content="oj">
+<meta property="og:type" content="article">
+<meta property="og:title" content="poj1159(dp)">
+<meta property="og:url" content="//iquit.top/2017/05/30/poj1159-dp/index.html">
 <meta property="og:site_name" content="Iquit">
-<meta property="og:description" content="偏激自闭，不易相处">
+<meta property="og:description" content="一道考dp和lcs的题。poj1159题意：给一个字符串和它的长度，求插入的最小字符数，可以使整个字符串在插入之后成为一个回文字符串。 解法：dp[i][j]——从s[i]到s[j]所需要的最小解，初始化所有j==i||j==i+1的dp[i][j]递推公式：dp[i][j] = dp[i+1][j-1]                       if s[i]==s[j]">
+<meta property="og:updated_time" content="2017-05-30T04:33:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Iquit">
-<meta name="twitter:description" content="偏激自闭，不易相处">
+<meta name="twitter:title" content="poj1159(dp)">
+<meta name="twitter:description" content="一道考dp和lcs的题。poj1159题意：给一个字符串和它的长度，求插入的最小字符数，可以使整个字符串在插入之后成为一个回文字符串。 解法：dp[i][j]——从s[i]到s[j]所需要的最小解，初始化所有j==i||j==i+1的dp[i][j]递推公式：dp[i][j] = dp[i+1][j-1]                       if s[i]==s[j]">
   
     <link rel="alternative" href="/atom.xml" title="Iquit" type="application/atom+xml">
   
@@ -162,36 +164,40 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-poj1159-dp" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      poj1159(dp)
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/30/poj1159-dp/" class="archive-article-date">
+
+        
+        <a href="/2017/05/30/poj1159-dp/" class="archive-article-date">
   	<time datetime="2017-05-30T04:07:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-30</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/30/poj1159-dp/">poj1159(dp)</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一道考dp和lcs的题。<br><a href="http://poj.org/problem?id=1159" target="_blank" rel="external">poj1159</a><br>题意：给一个字符串和它的长度，求插入的最小字符数，可以使整个字符串在插入之后成为一个回文字符串。</p>
+<p>解法：dp[i][j]——从s[i]到s[j]所需要的最小解，初始化所有j==i||j==i+1的dp[i][j]<br>递推公式：dp[i][j] = dp[i+1][j-1]                       if s[i]==s[j]<br>                     min(dp[i+1][j],dp[i][j-1]) + 1     if s[i]!=s[j]</p>
+<p>一开始dp用的int，结果mle了，改为short之后ac。用滚动数组来解决也可以，如果用滚动数组，则把dp更新时候的dp[i][j]修改为dp[i%3][j]即可。<br>下面把两种方法都列出来。(改成滚动数组之后居然初始化里面又一个地方忘了改，结果re了好几次。。简直爆炸。。)</p>
+<p>两种解法的代码分别如下:<br><a id="more"></a></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></div><div class="line"></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> M 5005</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> MIN(a, b) ((a) &lt; (b) ? (a) : (b))</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX(a, b) ((a) &gt; (b) ? (a) : (b))</span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">int</span> n;</div><div class="line"><span class="keyword">char</span> s[M];</div><div class="line"><span class="keyword">short</span> dp[M][M];</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">check</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"check: "</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; n ;i++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span> ; j &lt; n ;j++)</div><div class="line">            <span class="built_in">cout</span> &lt;&lt; dp[i][j]&lt;&lt; <span class="string">" "</span>;</div><div class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">cin</span> &gt;&gt; n;</div><div class="line">    <span class="built_in">cin</span> &gt;&gt; s;</div><div class="line"></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; n;i++)</div><div class="line">        dp[i][i] = <span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; n - <span class="number">1</span>; i++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">if</span>(s[i]==s[i+<span class="number">1</span>])</div><div class="line">            dp[i][i+<span class="number">1</span>] = <span class="number">0</span>;</div><div class="line">        <span class="keyword">else</span></div><div class="line">            dp[i][i+<span class="number">1</span>] = <span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">//check();</span></div><div class="line">    <span class="keyword">int</span> i,j,k;</div><div class="line">    <span class="keyword">for</span>(k = <span class="number">2</span> ; k &lt; n ; k++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">for</span>(i = <span class="number">0</span> ,j = k ; j &lt; n;i++,j++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(s[i] == s[j])</div><div class="line">                dp[i][j] = dp[i+<span class="number">1</span>][j<span class="number">-1</span>];</div><div class="line">            <span class="keyword">else</span></div><div class="line">                dp[i][j] = MIN(dp[i][j<span class="number">-1</span>],dp[i+<span class="number">1</span>][j])+<span class="number">1</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//check();</span></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; dp[<span class="number">0</span>][n<span class="number">-1</span>] &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></div><div class="line"></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> M 5005</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> MIN(a, b) ((a) &lt; (b) ? (a) : (b))</span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX(a, b) ((a) &gt; (b) ? (a) : (b))</span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"><span class="keyword">int</span> n;</div><div class="line"><span class="keyword">char</span> s[M];</div><div class="line"><span class="keyword">int</span> dp[<span class="number">4</span>][M];</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">check</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"check: "</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; n ;i++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span> ; j &lt; n ;j++)</div><div class="line">            <span class="built_in">cout</span> &lt;&lt; dp[i][j]&lt;&lt; <span class="string">" "</span>;</div><div class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">cin</span> &gt;&gt; n;</div><div class="line">    <span class="built_in">cin</span> &gt;&gt; s;</div><div class="line"></div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; n;i++)</div><div class="line">        dp[i%<span class="number">3</span>][i] = <span class="number">0</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span> ; i &lt; n - <span class="number">1</span>; i++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">if</span>(s[i]==s[i+<span class="number">1</span>])</div><div class="line">            dp[i%<span class="number">3</span>][i+<span class="number">1</span>] = <span class="number">0</span>;</div><div class="line">        <span class="keyword">else</span></div><div class="line">            dp[i%<span class="number">3</span>][i+<span class="number">1</span>] = <span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">//check();</span></div><div class="line">    <span class="keyword">int</span> i,j,k;</div><div class="line">    <span class="keyword">for</span>(k = <span class="number">2</span> ; k &lt; n ; k++)</div><div class="line">    &#123;</div><div class="line">        <span class="keyword">for</span>(i = <span class="number">0</span> ,j = k ; j &lt; n;i++,j++)</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(s[i] == s[j])</div><div class="line">                dp[i%<span class="number">3</span>][j] = dp[(i+<span class="number">1</span>)%<span class="number">3</span>][j<span class="number">-1</span>];</div><div class="line">            <span class="keyword">else</span></div><div class="line">                dp[i%<span class="number">3</span>][j] = MIN(dp[i%<span class="number">3</span>][j<span class="number">-1</span>],dp[(i+<span class="number">1</span>)%<span class="number">3</span>][j])+<span class="number">1</span>;</div><div class="line">        &#125;</div><div class="line">        <span class="comment">//check();</span></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="built_in">cout</span> &lt;&lt; dp[<span class="number">0</span>][n<span class="number">-1</span>] &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -203,327 +209,109 @@ var _hmt = _hmt || [];
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://iquit.top/2017/05/30/poj1159-dp/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/30/poj3176-dp/" class="archive-article-date">
-  	<time datetime="2017-05-30T03:28:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-30</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/30/poj3176-dp/">poj3176(dp)</a>
-    </h1>
+  
+    <a href="/2017/05/30/poj3176-dp/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">poj3176(dp)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "//iquit.top/2017/05/30/poj1159-dp/", 
+    sourceId: "poj1159-dp",
+    productKey: "ea8811694f05425681f3c36dd18fdd3e",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/30/poj2406-kmp/" class="archive-article-date">
-  	<time datetime="2017-05-30T02:03:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/30/poj2406-kmp/">poj2406(kmp)</a>
-    </h1>
+  <div id="SOHUCS" sid="poj1159-dp" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "cyt1zDaiA"; 
+var conf = "prod_12826554bf6e64427ce7b9e5fd255993"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/29/poj1961-kmp/" class="archive-article-date">
-  	<time datetime="2017-05-29T12:52:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/29/poj1961-kmp/">poj1961(kmp)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/29/poj1363-stack/" class="archive-article-date">
-  	<time datetime="2017-05-29T04:28:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/29/poj1363-stack/">poj1363(stack)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/28/poj3096/" class="archive-article-date">
-  	<time datetime="2017-05-28T15:22:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/28/poj3096/">poj3096（map+string）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/25/poj1287/" class="archive-article-date">
-  	<time datetime="2017-05-25T10:41:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/25/poj1287/">poj1287(最小生成树)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/24/jiudu1464-jiudu1468/" class="archive-article-date">
-  	<time datetime="2017-05-24T09:26:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/24/jiudu1464-jiudu1468/">jiudu1464 &amp; jiudu1468</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">jiudu</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/22/poj1251/" class="archive-article-date">
-  	<time datetime="2017-05-22T12:50:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/22/poj1251/">poj1251(最小生成树)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -546,9 +334,9 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

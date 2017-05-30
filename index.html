@@ -164,6 +164,70 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-poj1159-dp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/05/30/poj1159-dp/">poj1159(dp)</a>
+    </h1>
+  
+
+        
+        <a href="/2017/05/30/poj1159-dp/" class="archive-article-date">
+  	<time datetime="2017-05-30T04:07:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一道考dp和lcs的题。<br><a href="http://poj.org/problem?id=1159" target="_blank" rel="external">poj1159</a><br>题意：给一个字符串和它的长度，求插入的最小字符数，可以使整个字符串在插入之后成为一个回文字符串。</p>
+<p>解法：dp[i][j]——从s[i]到s[j]所需要的最小解，初始化所有j==i||j==i+1的dp[i][j]<br>递推公式：dp[i][j] = dp[i+1][j-1]                       if s[i]==s[j]<br>                     min(dp[i+1][j],dp[i][j-1]) + 1     if s[i]!=s[j]</p>
+<p>一开始dp用的int，结果mle了，改为short之后ac。用滚动数组来解决也可以，如果用滚动数组，则把dp更新时候的dp[i][j]修改为dp[i%3][j]即可。<br>下面把两种方法都列出来。(改成滚动数组之后居然初始化里面又一个地方忘了改，结果re了好几次。。简直爆炸。。)</p>
+<p>两种解法的代码分别如下:<br></p>
+        
+          <a class="article-more-a" href="/2017/05/30/poj1159-dp/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/05/30/poj1159-dp/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-poj3176-dp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -734,76 +798,6 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-jiudu1464-jiudu1468" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/24/jiudu1464-jiudu1468/">jiudu1464 &amp; jiudu1468</a>
-    </h1>
-  
-
-        
-        <a href="/2017/05/24/jiudu1464-jiudu1468/" class="archive-article-date">
-  	<time datetime="2017-05-24T09:26:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-24</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在学姐的安利下，开始刷九度oj。大概对保研机试会更有针对性一点吧。<br>(虽然题目真的好无聊啊。。。</p>
-<ul>
-<li>jiudu 1464</li>
-</ul>
-<p><a href="http://ac.jobdu.com/problem.php?pid=1464" target="_blank" rel="external">jiudu1464</a></p>
-<p>题目大意:把输入的字符串以U形输出。<br>解法:纯水，模拟。过。</p>
-        
-          <a class="article-more-a" href="/2017/05/24/jiudu1464-jiudu1468/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">jiudu</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/24/jiudu1464-jiudu1468/">展开全文 >></a>
         </p>
       
 
