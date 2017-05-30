@@ -164,6 +164,71 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-poj3176-dp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/05/30/poj3176-dp/">poj3176(dp)</a>
+    </h1>
+  
+
+        
+        <a href="/2017/05/30/poj3176-dp/" class="archive-article-date">
+  	<time datetime="2017-05-30T03:28:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一道dp水题，难度参考滑雪。</p>
+<p><a href="http://poj.org/problem?id=3176" target="_blank" rel="external">poj3176</a></p>
+<p>题意： 一个数塔，求从上到下最长路径。</p>
+<p>解法：一维dp，状态转移方程：dp[i] = max(dp[i+1],dp[i]) + a[j][i]</p>
+<p>代码如下：<br></p>
+        
+          <a class="article-more-a" href="/2017/05/30/poj3176-dp/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/05/30/poj3176-dp/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-poj2406-kmp" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -739,72 +804,6 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/05/24/jiudu1464-jiudu1468/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-  
-    <article id="post-poj1251" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/05/22/poj1251/">poj1251(最小生成树)</a>
-    </h1>
-  
-
-        
-        <a href="/2017/05/22/poj1251/" class="archive-article-date">
-  	<time datetime="2017-05-22T12:50:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>一道基础(水)的最小生成树的模版题。手速太慢了，做了大概30多分钟才A，这个熟悉度肯定不行，要加速。</p>
-<ul>
-<li>Prim  </li>
-</ul>
-<p>首先用Prim算法A过去了。姿势也比较清楚。<br>用一个ans数组，存放每个点到已经被访问过的节点集合即要生成的最小生成树的节点集合的的距离的最小值.<br>将节点0作为初始节点更新ans数组，每次将距离当前最小生成树的点集合的距离最小点加入集合，同时更新ans数组。<br>更新的方法为如果该点未访问且该点与当前加入的点的距离小于ans数组中原先记录的值，则做一次更新。<br>每次迭代修改visit数组中一个节点的标志，迭代n次即完成求解。</p>
-<p>代码如下：</p>
-        
-          <a class="article-more-a" href="/2017/05/22/poj1251/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/05/22/poj1251/">展开全文 >></a>
         </p>
       
 
