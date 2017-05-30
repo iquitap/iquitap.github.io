@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//iquit.top">
-  <title>Archives | Iquit</title>
+  <title>poj2406(kmp) | Iquit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="偏激自闭，不易相处">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Iquit">
-<meta property="og:url" content="//iquit.top/archives/page/2/index.html">
+  <meta name="description" content="还是一道kmp算法的训练。 题意：给你一个字符串，询问这个字符串能够被它的子字符串循环构成的最大循环次数。eg abababab 则输出4 解法：依旧是求出next数组（因为next好像是g++的关键字，所以代码中用flag做了替换）。最后判断的方法与那道题类似。即利用了next求最小循环节的应用。 应用的具体思路是:  例如  ababab[]  next为-1 0 0 1 2 3 4  即字符">
+<meta name="keywords" content="oj">
+<meta property="og:type" content="article">
+<meta property="og:title" content="poj2406(kmp)">
+<meta property="og:url" content="//iquit.top/2017/05/30/poj2406-kmp/index.html">
 <meta property="og:site_name" content="Iquit">
-<meta property="og:description" content="偏激自闭，不易相处">
+<meta property="og:description" content="还是一道kmp算法的训练。 题意：给你一个字符串，询问这个字符串能够被它的子字符串循环构成的最大循环次数。eg abababab 则输出4 解法：依旧是求出next数组（因为next好像是g++的关键字，所以代码中用flag做了替换）。最后判断的方法与那道题类似。即利用了next求最小循环节的应用。 应用的具体思路是:  例如  ababab[]  next为-1 0 0 1 2 3 4  即字符">
+<meta property="og:updated_time" content="2017-05-30T02:17:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Iquit">
-<meta name="twitter:description" content="偏激自闭，不易相处">
+<meta name="twitter:title" content="poj2406(kmp)">
+<meta name="twitter:description" content="还是一道kmp算法的训练。 题意：给你一个字符串，询问这个字符串能够被它的子字符串循环构成的最大循环次数。eg abababab 则输出4 解法：依旧是求出next数组（因为next好像是g++的关键字，所以代码中用flag做了替换）。最后判断的方法与那道题类似。即利用了next求最小循环节的应用。 应用的具体思路是:  例如  ababab[]  next为-1 0 0 1 2 3 4  即字符">
   
     <link rel="alternative" href="/atom.xml" title="Iquit" type="application/atom+xml">
   
@@ -162,174 +164,153 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-poj2406-kmp" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      poj2406(kmp)
+    </h1>
+  
+
+        
+        <a href="/2017/05/30/poj2406-kmp/" class="archive-article-date">
+  	<time datetime="2017-05-30T02:03:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-30</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>还是一道kmp算法的训练。</p>
+<p>题意：给你一个字符串，询问这个字符串能够被它的子字符串循环构成的最大循环次数。<br>eg abababab 则输出4</p>
+<p>解法：依旧是求出next数组（因为next好像是g++的关键字，所以代码中用flag做了替换）。最后判断的方法与那道题类似。即利用了next求最小循环节的应用。</p>
+<p>应用的具体思路是:<br>  例如  ababab[]<br>  next为-1 0 0 1 2 3 4<br>  即字符串如果再append一个元素，匹配失败的时候移动6-4=2<br>  则 ababab<br>       ababab<br>  所以可知1～4与3～6是相同的。则1～2也等于3～4了，3～4等于5～6了。所以如果整个字符串可以由子字符串循环构成，等价与len%(len-next[len])==0。即只要整除成功，就可以循环到最后了。</p>
+<p>  例如  1212121[]<br>  next为-1 0 0 1 2 3 4 5<br>  len%(len-next[len])=7%2=1,所以不能循环构成。</p>
+<p>代码如下:<br><a id="more"></a><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> MAX 1000005</span></div><div class="line"></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">char</span> s[MAX];</div><div class="line"><span class="keyword">int</span> flag[MAX];</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">check</span><span class="params">(<span class="keyword">int</span> len)</span></span></div><div class="line">&#123;</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"check: "</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; len + <span class="number">1</span> ;i++)</div><div class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">" "</span> &lt;&lt; flag[i];</div><div class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">while</span>(<span class="built_in">cin</span> &gt;&gt; s &amp;&amp; <span class="built_in">strcmp</span>(s,<span class="string">"."</span>))</div><div class="line">    &#123;</div><div class="line">        <span class="built_in">memset</span>(flag,<span class="number">-1</span>,<span class="keyword">sizeof</span>(flag));</div><div class="line">        <span class="keyword">int</span> len = <span class="built_in">strlen</span>(s);</div><div class="line">        <span class="keyword">int</span> i = <span class="number">0</span> ;</div><div class="line">        <span class="keyword">int</span> j = <span class="number">-1</span>;</div><div class="line">        <span class="keyword">while</span>(s[i])</div><div class="line">        &#123;</div><div class="line">            <span class="keyword">if</span>(j == <span class="number">-1</span> || s[i] == s[j])</div><div class="line">            &#123;</div><div class="line">                i++;</div><div class="line">                j++;</div><div class="line">                flag[i] = j;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">else</span></div><div class="line">                j = flag[j];</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        check(len);</div><div class="line"></div><div class="line">        <span class="keyword">int</span> ans = <span class="number">1</span>;</div><div class="line">        <span class="keyword">if</span>(len % (len - flag[len]) == <span class="number">0</span>)</div><div class="line">            ans = len / (len - flag[len]);</div><div class="line">        <span class="built_in">cout</span> &lt;&lt; ans &lt;&lt; <span class="built_in">endl</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/22/summer-timeline/" class="archive-article-date">
-  	<time datetime="2017-05-22T11:28:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/22/summer-timeline/">Summer Timeline</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://iquit.top/2017/05/30/poj2406-kmp/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/22/music-and-photo-test/" class="archive-article-date">
-  	<time datetime="2017-05-22T05:44:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/22/music-and-photo-test/">music and photo test</a>
-    </h1>
+  
+    <a href="/2017/05/29/poj1961-kmp/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">poj1961(kmp)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "//iquit.top/2017/05/30/poj2406-kmp/", 
+    sourceId: "poj2406-kmp",
+    productKey: "ea8811694f05425681f3c36dd18fdd3e",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">cc</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/22/My-first-post/" class="archive-article-date">
-  	<time datetime="2017-05-22T05:13:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/22/My-first-post/">My first post</a>
-    </h1>
+  <div id="SOHUCS" sid="poj2406-kmp" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "cyt1zDaiA"; 
+var conf = "prod_12826554bf6e64427ce7b9e5fd255993"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">quit</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/22/hello-world/" class="archive-article-date">
-  	<time datetime="2017-05-22T04:02:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/22/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/archives/">&laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
-    </nav>
   
 
 
@@ -353,8 +334,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
