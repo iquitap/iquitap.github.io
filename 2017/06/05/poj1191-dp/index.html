@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//iquit.top">
-  <title>Archives | Iquit</title>
+  <title>poj1191(dp) | Iquit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="偏激自闭，不易相处">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Iquit">
-<meta property="og:url" content="//iquit.top/archives/index.html">
+  <meta name="description" content="一道dp。poj1191一开始没想出来，第一眼看题解被5维给吓到了。。但实际上做起来这道题并不难。因为题目是中文，所以不需要描述题意了。 解法：首先要对均方差的公式进行化简，然后就可以发现，只需要通过dp求出最小的sigma(xi^2)即可。dp的递推公式也就是首先横向分割然后纵向，取其中的小值然后递推即可。 代码如下：">
+<meta name="keywords" content="oj">
+<meta property="og:type" content="article">
+<meta property="og:title" content="poj1191(dp)">
+<meta property="og:url" content="//iquit.top/2017/06/05/poj1191-dp/index.html">
 <meta property="og:site_name" content="Iquit">
-<meta property="og:description" content="偏激自闭，不易相处">
+<meta property="og:description" content="一道dp。poj1191一开始没想出来，第一眼看题解被5维给吓到了。。但实际上做起来这道题并不难。因为题目是中文，所以不需要描述题意了。 解法：首先要对均方差的公式进行化简，然后就可以发现，只需要通过dp求出最小的sigma(xi^2)即可。dp的递推公式也就是首先横向分割然后纵向，取其中的小值然后递推即可。 代码如下：">
+<meta property="og:updated_time" content="2017-06-05T14:15:08.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Iquit">
-<meta name="twitter:description" content="偏激自闭，不易相处">
+<meta name="twitter:title" content="poj1191(dp)">
+<meta name="twitter:description" content="一道dp。poj1191一开始没想出来，第一眼看题解被5维给吓到了。。但实际上做起来这道题并不难。因为题目是中文，所以不需要描述题意了。 解法：首先要对均方差的公式进行化简，然后就可以发现，只需要通过dp求出最小的sigma(xi^2)即可。dp的递推公式也就是首先横向分割然后纵向，取其中的小值然后递推即可。 代码如下：">
   
     <link rel="alternative" href="/atom.xml" title="Iquit" type="application/atom+xml">
   
@@ -162,36 +164,63 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-poj1191-dp" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      poj1191(dp)
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/05/poj1191-dp/" class="archive-article-date">
+
+        
+        <a href="/2017/06/05/poj1191-dp/" class="archive-article-date">
   	<time datetime="2017-06-05T14:06:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-05</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/05/poj1191-dp/">poj1191(dp)</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一道dp。<br><a href="http://poj.org/problem?id=1191" target="_blank" rel="external">poj1191</a><br>一开始没想出来，第一眼看题解被5维给吓到了。。但实际上做起来这道题并不难。<br>因为题目是中文，所以不需要描述题意了。</p>
+<p>解法：首先要对均方差的公式进行化简，然后就可以发现，只需要通过dp求出最小的sigma(xi^2)即可。<br>dp的递推公式也就是首先横向分割然后纵向，取其中的小值然后递推即可。</p>
+<p>代码如下：<br><a id="more"></a></p>
+<p>``c++</p>
+<p>#include <iostream></iostream></p>
+<p>#include <stdio.h></stdio.h></p>
+<p>#include <string.h></string.h></p>
+<p>#include <math.h></math.h></p>
+<p>#define min(a,b) (a&lt;b?a:b)<br>using namespace std;</p>
+<p>int n;<br>int map[10][10];<br>int dp[10][10][10][10][16];</p>
+<p>int get(int x,int y,int a,int b)<br>{<br>    return map[a][b] - map[a][y-1] - map[x-1][b] + map[x-1][y-1];<br>}</p>
+<p>int solve(int x,int y, int a, int b, int k)<br>{<br>    if(dp[x][y][a][b][k]!=-1)return dp[x][y][a][b][k];<br>    if(k==1)return dp[x][y][a][b][k]=get(x,y,a,b)<em>get(x,y,a,b);<br>    int minn=10000000;<br>    for(int i=x;i&lt;a;i++)    //水平方向<br>    {<br>         int l=get(x,y,i,b);<br>         int r=get(i+1,y,a,b);<br>         minn=min(minn,min(solve(x,y,i,b,k-1)+r</em>r,solve(i+1,y,a,b,k-1)+l<em>l));<br>    }<br>    for(int i=y;i&lt;b;i++)    // 竖直方向<br>    {<br>        int l=get(x,y,a,i);<br>        int h=get(x,i+1,a,b);<br>        minn=min(minn,min(solve(x,y,a,i,k-1)+h</em>h,solve(x,i+1,a,b,k-1)+l*l));<br>    }<br>    return (dp[x][y][a][b][k]=minn);<br>}</p>
+<p>int main()<br>{<br>    cin &gt;&gt; n;<br>    memset(map,0,sizeof(map));<br>    memset(dp,-1,sizeof(dp));</p>
+<pre><code>for(int i = 1 ; i &lt; 9 ; i++)
+{
+    for(int j = 1 ; j &lt; 9 ; j++)
+    {
+        int temp;
+        cin &gt;&gt; temp;
+        map[i][j] = map[i-1][j] + map[i][j-1] - map[i-1][j-1] + temp;
+    }
+}
+double avi = map[8][8] * 1.0 / n;
+double ans = solve(1,1,8,8,n);
+printf(&quot;%.3lf\n&quot;,sqrt(ans*1.0/n-avi*avi));
+//cout &lt;&lt; sqrt(ans/n*1.0 - avi*avi);
+return 0;
+</code></pre><p>}</p>
+<p>``</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -203,364 +232,108 @@ var _hmt = _hmt || [];
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://iquit.top/2017/06/05/poj1191-dp/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/30/poj1159-dp/" class="archive-article-date">
-  	<time datetime="2017-05-30T04:07:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-30</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/30/poj1159-dp/">poj1159(dp)</a>
-    </h1>
+  
+    <a href="/2017/05/30/poj1159-dp/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">poj1159(dp)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+  
+  
+  
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "//iquit.top/2017/06/05/poj1191-dp/", 
+    sourceId: "poj1191-dp",
+    productKey: "ea8811694f05425681f3c36dd18fdd3e",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/30/poj3176-dp/" class="archive-article-date">
-  	<time datetime="2017-05-30T03:28:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/30/poj3176-dp/">poj3176(dp)</a>
-    </h1>
+  <div id="SOHUCS" sid="poj1191-dp" ></div> 
+<script type="text/javascript"> 
+(function(){ 
+var appid = "cyt1zDaiA"; 
+var conf = "prod_12826554bf6e64427ce7b9e5fd255993"; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/30/poj2406-kmp/" class="archive-article-date">
-  	<time datetime="2017-05-30T02:03:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/30/poj2406-kmp/">poj2406(kmp)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/29/poj1961-kmp/" class="archive-article-date">
-  	<time datetime="2017-05-29T12:52:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/29/poj1961-kmp/">poj1961(kmp)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/29/2017-05-29/" class="archive-article-date">
-  	<time datetime="2017-05-29T07:21:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/29/2017-05-29/">2017-05-29</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/29/poj1363-stack/" class="archive-article-date">
-  	<time datetime="2017-05-29T04:28:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/29/poj1363-stack/">poj1363(stack)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/28/poj3096/" class="archive-article-date">
-  	<time datetime="2017-05-28T15:22:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-28</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/28/poj3096/">poj3096（map+string）</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/27/2015-5-27/" class="archive-article-date">
-  	<time datetime="2017-05-27T14:57:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/27/2015-5-27/">2015-5-27</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/25/poj1287/" class="archive-article-date">
-  	<time datetime="2017-05-25T10:41:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/25/poj1287/">poj1287(最小生成树)</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">oj</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -584,8 +357,8 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

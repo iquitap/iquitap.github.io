@@ -164,6 +164,76 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/">《GrabCut -- Interactive Foreground Extraction using Iterated Graph Cuts》阅读笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/" class="archive-article-date">
+  	<time datetime="2017-05-25T01:43:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-25</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>  这篇论文读完已经有一个礼拜左右，感觉收获很大，但是只能算浅读，所以现在在这里打算整理一下，方便理清思路。</p>
+<h2 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h2><p>  Grab cut是基于graph cut实现的一个分割和抠图算法。它主要实现的功能有:<br>  （1）在目标外面画上一个框之后，把目标框住，从而区分出foreground/background，然后可就可以完成初步的图像分割。<br><img src="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/1.png" alt=""><br>  （2）grab cut同时提供了用户交互，用户可以通过画出一个大概的边界，从而人为的完成部分像素的指定，然后再次进行迭代，从而达到更理想的效果。<br><img src="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/2.png" alt=""></p>
+<h2 id="grab-cut"><a href="#grab-cut" class="headerlink" title="grab cut"></a>grab cut</h2><p>  上面我们已经说过了，Grab cut是基于graph cut实现的，这里的基于主要是指的是吉布斯能量公式和最小割算法模型。<br>  Graph Cuts中有两种顶点，也有两种边。<br>  第一种顶点和边是：第一种普通顶点对应于图像中的每个像素。<br>  每两个邻域顶点（对应于图像中每两个邻域像素）的连接就是一条边。这种边也叫n-links。</p>
+<p>  第二种顶点和边是：除图像像素外，还有另外两个终端顶点，<br>  叫S（source：源点，取源头之意）和T（sink：汇点，取汇聚之意）。<br>  每个普通顶点和这2个终端顶点之间都有连接，<br>  组成第二种边。这种边也叫t-links。</p>
+<p><strong> Gibbs energy </strong><br>  graph cut的目标和背景的模型是灰度直方图。</p>
+<p><img src="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/gongshi.png" alt=""><br>  z为图像数据，α为像素点的灰度值，0表示背景，1表示前景，h为对应数据描述的灰度直方图模型。<br>  E即为gibbs energy，第一项U(α,θ,z)为数据项，即为，表示的是不透明分布对图像数据的符合程度，<br>也可以理解成为一个像素被归类为某个目标的惩罚，所以他的计算值为某个像素属于不同的目标或者背景<br>的概率的负对数的累加和。那么，如果全部的像素都被正确划分为目标或者背景，那么这时候能量就是最小的。</p>
+<p>第二项V(α,z)为平滑项，在一些资料中也被描述成是边界项，体现邻域像素m和n之间不连续的惩罚。<br>如果如果两邻域像素差别很小，那么它属于同一个目标或者同一背景的可能性就很大，如果他们的差别很大，<br>那说明这两个像素很有可能处于目标和背景的边缘部分，则被分割开的可能性比较大，所以当两邻域像素差别越大，<br>能量越小。这里面的参数β由图像的对比度决定,常数γ为50是通过作者选取15张图片训练出的较好结果值。</p>
+<p>当能量功能确定之后，我们就可以用迭代能量最小化对图像进行分割了。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">grabcut</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">opencv</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/05/25/《GrabCut-Interactive-Foreground-Extraction-using-Iterated-Graph-Cuts》阅读笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+  
     <article id="post-jiudu1464-jiudu1468" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
