@@ -14,20 +14,20 @@ I'm currently a Ph.D. student at Shanghai Jiao Tong University, Dept. of Compute
 
 Education
 ======
-* B.S. in Huazhong University of Science and Technology, 2018
 * Ph.D in Shanghai Jiao Tong University, 2023 (expected)
+* B.S. in Huazhong University of Science and Technology, 2018
 
 Work experience
 ======
-* Summer 2020: Research Intern
-  * T-Head Alibaba
-* Spring 2021: Research Intern
-  * Peng Cheng Laboratory
-* Summer 2021: Research Intern
-  * Qi Zhi Institute
 * Summer 2022: Research Intern
   * Alibaba Cloud
-
+* Summer 2021: Research Intern
+  * Qi Zhi Institute
+* Spring 2021: Research Intern
+  * Peng Cheng Laboratory
+* Summer 2020: Research Intern
+  * T-Head Alibaba
+  
 Publications
 ======
   <ul>{% for post in site.publications %}
