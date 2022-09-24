@@ -9,5 +9,3 @@ citation: ''
 ---
 
 <a href='http://academicpages.github.io/files/paper3.pdf'>Download paper here</a>
-
-Recommended citation: 
