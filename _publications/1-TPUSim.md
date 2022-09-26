@@ -8,4 +8,4 @@ paperurl: 'http://academicpages.github.io/files/paper2.pdf'
 citation: ''
 ---
 
-<a href='http://academicpages.github.io/files/paper2.pdf'>Download paper here</a>
+<!-- <a href='http://academicpages.github.io/files/paper2.pdf'>Download paper here</a> -->
