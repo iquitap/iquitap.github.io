@@ -4,8 +4,8 @@ collection: publications
 permalink: /publication/2022/5/1-EQT
 date: 2022/5/1
 venue: 'Arvix'
-paperurl: 'http://academicpages.github.io/files/paper4.pdf'
+paperurl: 'https://arxiv.org/abs/2208.11945'
 citation: ''
 ---
 
-<a href='http://academicpages.github.io/files/paper4.pdf'>Download paper here</a>
+<a href='https://arxiv.org/abs/2208.11945'>Paper</a>

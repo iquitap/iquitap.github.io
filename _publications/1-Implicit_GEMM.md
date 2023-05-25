@@ -4,8 +4,8 @@ collection: publications
 permalink: /publication/2021/10/1-Implicit_GEMM
 date: 2021/10/1
 venue: 'IISWC 21'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
+paperurl: 'https://arxiv.org/abs/2110.03901'
 citation: ''
 ---
 
-<a href='http://academicpages.github.io/files/paper3.pdf'>Download paper here</a>
+<a href='https://arxiv.org/abs/2110.03901'>Paper</a>

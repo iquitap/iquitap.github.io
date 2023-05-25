@@ -4,8 +4,8 @@ collection: publications
 permalink: /publication/2022/10/1-uGarpher
 date: 2022/10/1
 venue: 'ASPLOS 23'
-paperurl: 'http://academicpages.github.io/files/paper5.pdf'
+paperurl: 'https://dl.acm.org/doi/10.1145/3575693.3575723'
 citation: ''
 ---
 
-<a href='http://academicpages.github.io/files/paper5.pdf'>Download paper here</a>
+<a href='https://dl.acm.org/doi/10.1145/3575693.3575723'>Paper</a>

@@ -4,8 +4,8 @@ collection: publications
 permalink: /publication/2020/12/1-TPUSim
 date: 2020/12/1
 venue: 'DAC 20, Poster'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
+paperurl: 'https://www.facebook.com/groups/543081893039790/'
 citation: ''
 ---
 
-<a href='http://academicpages.github.io/files/paper2.pdf'>Download paper here</a>
+<a href='https://www.facebook.com/groups/543081893039790/'>Paper</a>

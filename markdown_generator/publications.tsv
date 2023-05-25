@@ -1,7 +1,7 @@
 pub_date	title	venue	excerpt	citation	url_slug	paper_url
-2020/12/1	Balancing efficiency and flexibility for DNN acceleration via temporal GPU-systolic array integration	DAC 20			SMA	http://academicpages.github.io/files/paper1.pdf
-2020/12/1	TPUSim: ISA Design and Optimization for Fused Architecture Based Training Accelerator	"DAC 20, Poster"			TPUSim	http://academicpages.github.io/files/paper2.pdf
-2021/10/1	Characterizing and Demystifying the Implicit Convolution Algorithm on Commercial Matrix-Multiplication Accelerators	IISWC 21			Implicit_GEMM	http://academicpages.github.io/files/paper3.pdf
-2022/5/1	Efficient Activation Quantization via Adaptive Rounding Border for Post-Training Quantization	Arvix			EQT	http://academicpages.github.io/files/paper4.pdf
-2022/10/1	uGrapher: High-performance Graph Operator Computation via  Unified Abstraction for Graph Neural Networks	ASPLOS 23			uGarpher	http://academicpages.github.io/files/paper5.pdf
+2020/12/1	Balancing efficiency and flexibility for DNN acceleration via temporal GPU-systolic array integration	DAC 20			SMA	https://arxiv.org/abs/2002.08326
+2020/12/1	TPUSim: ISA Design and Optimization for Fused Architecture Based Training Accelerator	"DAC 20, Poster"			TPUSim	https://www.facebook.com/groups/543081893039790/
+2021/10/1	Characterizing and Demystifying the Implicit Convolution Algorithm on Commercial Matrix-Multiplication Accelerators	IISWC 21			Implicit_GEMM	https://arxiv.org/abs/2110.03901
+2022/5/1	Efficient Activation Quantization via Adaptive Rounding Border for Post-Training Quantization	Arvix			EQT	https://arxiv.org/abs/2208.11945
+2022/10/1	uGrapher: High-performance Graph Operator Computation via  Unified Abstraction for Graph Neural Networks	ASPLOS 23			uGarpher	https://dl.acm.org/doi/10.1145/3575693.3575723
 2023/5/1	AdaptGear: Accelerating GNN Training via Adaptive Subgraph-Level Kernels on GPUs	CF 23			AdaptGear	http://academicpages.github.io/files/paper6.pdf  
