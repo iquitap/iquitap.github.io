@@ -4,3 +4,4 @@ pub_date	title	venue	excerpt	citation	url_slug	paper_url
 2021/10/1	Characterizing and Demystifying the Implicit Convolution Algorithm on Commercial Matrix-Multiplication Accelerators	IISWC 21			Implicit_GEMM	http://academicpages.github.io/files/paper3.pdf
 2022/5/1	Efficient Activation Quantization via Adaptive Rounding Border for Post-Training Quantization	Arvix			EQT	http://academicpages.github.io/files/paper4.pdf
 2022/10/1	uGrapher: High-performance Graph Operator Computation via  Unified Abstraction for Graph Neural Networks	ASPLOS 23			uGarpher	http://academicpages.github.io/files/paper5.pdf
+2023/5/1	AdaptGear: Accelerating GNN Training via Adaptive Subgraph-Level Kernels on GPUs	CF 23			AdaptGear	http://academicpages.github.io/files/paper6.pdf  
