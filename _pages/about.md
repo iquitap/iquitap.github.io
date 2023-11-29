@@ -9,15 +9,21 @@ redirect_from:
 ---
 Bio  
 ======
-I'm a final-year Ph.D. student at Shanghai Jiao Tong University, Dept. of Computer Science and Engineering. My tutor is Prof. Jingwen Leng, and I mainly research on ML system, high-performance computing and computer architecture.
+<!-- I'm a final-year Ph.D. student at Shanghai Jiao Tong University, Dept. of Computer Science and Engineering. My tutor is Prof. Jingwen Leng, and I mainly research on ML system, high-performance computing and computer architecture. -->
+<!-- I an AI system developer/researcher in PAI team of Tencent. I received the Ph.D. degree from Shanghai Jiao Tong University. My supervisor is Prof. Jingwen Leng.
+
+My search interests include ML system, high-performance computing and computer architecture. -->
+
+I am an ML system developer and researcher, currently working as a part of the AI Lab at Tencent. I earned my Ph.D. degree from Shanghai Jiao Tong University under the guidance of Prof. Jingwen Leng.
+
+My research interests include machine learning systems, high-performance computing, and computer architecture. I am passionate about exploring innovative solutions in these fields and contributing to the advancement of technology.
 
 
-
-I am looking for a full-time job, please feel free to reach out to me.
+~~I am looking for a full-time job, please feel free to reach out to me.~~
 
 Education
 ======
-* Ph.D in Shanghai Jiao Tong University, 2023 (expected)
+* Ph.D in Shanghai Jiao Tong University, 2023
 * B.S. in Huazhong University of Science and Technology, 2018
 
 Work experience
