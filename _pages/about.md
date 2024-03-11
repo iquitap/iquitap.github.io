@@ -19,29 +19,44 @@ I am an ML system developer and researcher, currently working as a part of the A
 My research interests include machine learning systems, high-performance computing, and computer architecture. I am passionate about exploring innovative solutions in these fields and contributing to the advancement of technology.
 
 
-~~I am looking for a full-time job, please feel free to reach out to me.~~
+<!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
 Education
 ======
 * Ph.D in Shanghai Jiao Tong University, 2023
 * B.S. in Huazhong University of Science and Technology, 2018
 
-Work experience
-======
-* Summer 2022: Research Intern
-  * Alibaba Cloud
-* Summer 2021: Research Intern
-  * Qi Zhi Institute
-* Spring 2021: Research Intern
-  * Peng Cheng Laboratory
-* Summer 2020: Research Intern
-  * T-Head Alibaba
+Work Experience
+===============
+- 2023.10 - Present: System Developer/Researcher 
+  - Tencent AI Lab
+- Summer 2022: Research Intern
+  - Alibaba Cloud PAI
+- Summer 2021: Research Intern
+  - Qi Zhi Institute
+- Spring 2021: Research Intern
+  - Peng Cheng Laboratory
+- Summer 2020: Research Intern
+  - T-Head Alibaba
   
 Publications
 ======
-  <ul>{% for post in site.publications %}
+- Yue Guan, Changming Yu, **Yangjie Zhou**, Jingwen Leng, Chao Li, Minyi Guo. [Fractal: Joint Multi-Level Sparse Pattern Tuning of Accuracy and Performance for DNN Pruning](#). Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, 2024. (ASPLOS 2024)
+- **Yangjie Zhou**, Jingwen Leng, Yaoxu Song, Shuwen Lu, Mian Wang, Chao Li, Minyi Guo, Wenting Shen, Yong Li, Wei Lin, Xiangwen Liu, Hanqing Wu. [uGrapher: High-Performance Graph Operator Computation via Unified Abstraction for Graph Neural Networks](https://dl.acm.org/doi/10.1145/3575693.3575723). Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2. 2023. (ASPLOS 2023)
+- **Yangjie Zhou**, Yaoxu Song, Jingwen Leng, Zihan Liu, Weihao Cui, Zhendong Zhang, Cong Guo, Quan Chen, Li Li, Minyi Guo. [AdaptGear: Accelerating GNN Training via Adaptive Subgraph-Level Kernels on GPUs](https://dl.acm.org/doi/abs/10.1145/3587135.3592199). 20th ACM International Conference on Computing Frontiers. (CF 2023)
+- Guandong Lu, Runzhe Chen, Yakai Wang, **Yangjie Zhou**, Rui Zhang, Zheng Hu, Yanming Miao, Zhifang Cai, Li Li, Jingwen Leng, Minyi Guo. [DistSim: A performance model of large-scale hybrid distributed DNN training](https://dl.acm.org/doi/abs/10.1145/3587135.3592200). 20th ACM International Conference on Computing Frontiers. (CF 2023)
+- **Yangjie Zhou**, Mengtian Yang, Cong Guo, Jingwen Leng, Yun Liang, Quan Chen, Minyi Guo, Yuhao Zhu. [Characterizing and demystifying the implicit convolution algorithm on commercial matrix-multiplication accelerators](https://arxiv.org/abs/2110.03901). 2021 IEEE International Symposium on Workload Characterization. (IISWC 2021)
+- **Yangjie Zhou**, Jingwen Leng, Mengtian Yang, Zhihui Zhang, Yakai Wang, Chen Zhang, Minyi Guo, Yuhao Zhu. [TPUSim: ISA Design and Optimization for Fused Architecture Based Training Accelerator](https://www.facebook.com/groups/543081893039790/). Poster. 2020 57th ACM/IEEE Design Automation Conference (DAC 2020)(Poster)
+- Cong Guo, **Yangjie Zhou**, Jingwen Leng, Yuhao Zhu, Zidong Du, Quan Chen, Chao Li, Bin Yao, Minyi Guo. [Balancing efficiency and flexibility for DNN acceleration via temporal GPU-systolic array integration](https://arxiv.org/abs/2002.08326). 2020 57th ACM/IEEE Design Automation Conference. (DAC 2020)
+
+Honors and Services
+====================
+- 2023 MLSys'23 Artifact Evaluation Committee 
+- 2022 Shanghai Jiao Tong University John Hopcroft Center Excellent Doctoral Academic Forum First Prize Scholarship
+- 2020 DAC'20 Richard Newton Young Student Fellow, Design Automation Conference
+  <!-- <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
 
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io). -->
 
