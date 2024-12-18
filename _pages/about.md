@@ -14,7 +14,8 @@ Bio
 
 My search interests include ML system, high-performance computing and computer architecture. -->
 
-I am an ML system developer and researcher, currently working as a part of the AI Lab at Tencent. I earned my Ph.D. degree from Shanghai Jiao Tong University under the guidance of Prof. Jingwen Leng.
+<!-- I am an ML system developer and researcher, currently working as a part of the AI Lab at Tencent. I earned my Ph.D. degree from Shanghai Jiao Tong University under the guidance of Prof. Jingwen Leng.-->
+I am currently a postdoctoral research fellow at the National University of Singapore (NUS), collaborating with [Prof. Jin Song Dong](https://www.comp.nus.edu.sg/~dongjs/). I earned my Ph.D. from Shanghai Jiao Tong University under the supervision of [Prof. Jingwen Leng](https://www.cs.sjtu.edu.cn/~leng-jw/).
 
 My research interests include machine learning systems, high-performance computing, and computer architecture. I am passionate about exploring innovative solutions in these fields and contributing to the advancement of technology.
 
@@ -28,7 +29,7 @@ Education
 
 Work Experience
 ===============
-- 2023.10 - Present: System Developer/Researcher 
+- 2023.10 - 2024.10: System Developer/Researcher 
   - Tencent AI Lab
 - Summer 2022: Research Intern
   - Alibaba Cloud PAI
@@ -41,6 +42,7 @@ Work Experience
   
 Publications
 ======
+- Zihan Liu, Xinhao Luo, Junxian Guo, Wentao Ni, **Yangjie Zhou**, Yue Guan, Cong Guo, Weihao Cui, Yu Feng, Minyi GUo, Yuhao Zhu, Minjia Zhang, Jingwen Leng, Chen Jin. [VQ-LLM: High-performance Code Generation for Vector Quantization Augmented LLM Inference](#). Proceedings of the 31st IEEE International Symposium on High-Performance Computer Architecture. (HPCA 2025)
 - Yue Guan, Changming Yu, **Yangjie Zhou**, Jingwen Leng, Chao Li, Minyi Guo. [Fractal: Joint Multi-Level Sparse Pattern Tuning of Accuracy and Performance for DNN Pruning](#). Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, 2024. (ASPLOS 2024)
 - **Yangjie Zhou**, Jingwen Leng, Yaoxu Song, Shuwen Lu, Mian Wang, Chao Li, Minyi Guo, Wenting Shen, Yong Li, Wei Lin, Xiangwen Liu, Hanqing Wu. [uGrapher: High-Performance Graph Operator Computation via Unified Abstraction for Graph Neural Networks](https://dl.acm.org/doi/10.1145/3575693.3575723). Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2. 2023. (ASPLOS 2023)
 - **Yangjie Zhou**, Yaoxu Song, Jingwen Leng, Zihan Liu, Weihao Cui, Zhendong Zhang, Cong Guo, Quan Chen, Li Li, Minyi Guo. [AdaptGear: Accelerating GNN Training via Adaptive Subgraph-Level Kernels on GPUs](https://dl.acm.org/doi/abs/10.1145/3587135.3592199). 20th ACM International Conference on Computing Frontiers. (CF 2023)
@@ -54,7 +56,7 @@ Honors and Services
 - 2024 OSDI'24 Artifact Evaluation Committee 
 - 2024 ATC'24 Artifact Evaluation Committee 
 - 2023 MLSys'23 Artifact Evaluation Committee 
-- 2022 Shanghai Jiao Tong University John Hopcroft Center Excellent Doctoral Academic Forum First Prize Scholarship
+- 2022 SJTU JHC Excellent Doctoral Academic Forum First Prize Scholarship
 - 2020 DAC'20 Richard Newton Young Student Fellow
 
 
