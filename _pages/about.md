@@ -48,12 +48,14 @@ Publications
 - **Yangjie Zhou**, Jingwen Leng, Yaoxu Song, Shuwen Lu, Mian Wang, Chao Li, Minyi Guo, Wenting Shen, Yong Li, Wei Lin, Xiangwen Liu, Hanqing Wu. [uGrapher: High-Performance Graph Operator Computation via Unified Abstraction for Graph Neural Networks](https://dl.acm.org/doi/10.1145/3575693.3575723). Proceedings of the 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2. 2023. (ASPLOS 2023)
 - **Yangjie Zhou**, Yaoxu Song, Jingwen Leng, Zihan Liu, Weihao Cui, Zhendong Zhang, Cong Guo, Quan Chen, Li Li, Minyi Guo. [AdaptGear: Accelerating GNN Training via Adaptive Subgraph-Level Kernels on GPUs](https://dl.acm.org/doi/abs/10.1145/3587135.3592199). 20th ACM International Conference on Computing Frontiers. (CF 2023)
 - Guandong Lu, Runzhe Chen, Yakai Wang, **Yangjie Zhou**, Rui Zhang, Zheng Hu, Yanming Miao, Zhifang Cai, Li Li, Jingwen Leng, Minyi Guo. [DistSim: A performance model of large-scale hybrid distributed DNN training](https://dl.acm.org/doi/abs/10.1145/3587135.3592200). 20th ACM International Conference on Computing Frontiers. (CF 2023)
+- Zhengyi Li, Cong Guo, Zhanda Zhu, **Yangjie Zhou**, Yuxian Qiu, Xiaotian Gao, Jingwen Leng, Minyi Guo. [Efficient Adaptive Activation Rounding for Post-Training Quantization](https://arxiv.org/pdf/2208.11945). Preprint.
 - **Yangjie Zhou**, Mengtian Yang, Cong Guo, Jingwen Leng, Yun Liang, Quan Chen, Minyi Guo, Yuhao Zhu. [Characterizing and demystifying the implicit convolution algorithm on commercial matrix-multiplication accelerators](https://arxiv.org/abs/2110.03901). 2021 IEEE International Symposium on Workload Characterization. (IISWC 2021)
 - **Yangjie Zhou**, Jingwen Leng, Mengtian Yang, Zhihui Zhang, Yakai Wang, Chen Zhang, Minyi Guo, Yuhao Zhu. [TPUSim: ISA Design and Optimization for Fused Architecture Based Training Accelerator](https://www.facebook.com/groups/543081893039790/). Poster. 2020 57th ACM/IEEE Design Automation Conference (DAC 2020)(Poster)
 - Cong Guo, **Yangjie Zhou**, Jingwen Leng, Yuhao Zhu, Zidong Du, Quan Chen, Chao Li, Bin Yao, Minyi Guo. [Balancing efficiency and flexibility for DNN acceleration via temporal GPU-systolic array integration](https://arxiv.org/abs/2002.08326). 2020 57th ACM/IEEE Design Automation Conference. (DAC 2020)
 
 Honors and Services
 ====================
+- 2025 ACM Transactions on Internet Technology, Reviewer
 - 2024 OSDI'24 Artifact Evaluation Committee 
 - 2024 ATC'24 Artifact Evaluation Committee 
 - 2023 MLSys'23 Artifact Evaluation Committee 
