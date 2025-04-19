@@ -22,6 +22,12 @@ My research interests include machine learning systems, high-performance computi
 
 <!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
+## News
+
+- 2024.12: Started postdoc at NUS.
+- 2024.11 Our paper VQ-LLM is accepted to HPCA 202.
+- 2023.09 I receive my PhD from Shanghai Jiao Tong University.
+
 Education
 ======
 * Ph.D in Shanghai Jiao Tong University, 2023
@@ -55,6 +61,7 @@ Publications
 
 Honors and Services
 ====================
+- 2025 OSDI'25, Artifact Evaluation Committee
 - 2025 ACM Transactions on Internet Technology, Reviewer
 - 2024 OSDI'24 Artifact Evaluation Committee 
 - 2024 ATC'24 Artifact Evaluation Committee 
