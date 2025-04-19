@@ -75,8 +75,10 @@ My research interests include machine learning systems, high-performance computi
 - **Yangjie Zhou**, Jingwen Leng, Mengtian Yang, Zhihui Zhang, Yakai Wang, Chen Zhang, Minyi Guo, Yuhao Zhu. [TPUSim: ISA Design and Optimization for Fused Architecture Based Training Accelerator](https://www.facebook.com/groups/543081893039790/). Poster. 2020 57th ACM/IEEE Design Automation Conference (DAC 2020)(Poster)
 - Cong Guo, **Yangjie Zhou**, Jingwen Leng, Yuhao Zhu, Zidong Du, Quan Chen, Chao Li, Bin Yao, Minyi Guo. [Balancing efficiency and flexibility for DNN acceleration via temporal GPU-systolic array integration](https://arxiv.org/abs/2002.08326). 2020 57th ACM/IEEE Design Automation Conference. (DAC 2020)
 
-Honors and Services
-====================
+<!-- Honors and Services
+==================== -->
+
+## Honors and Services
 - 2025 OSDI'25, Artifact Evaluation Committee
 - 2025 ACM Transactions on Internet Technology, Reviewer
 - 2024 OSDI'24 Artifact Evaluation Committee 
