@@ -7,34 +7,45 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Bio  
-======
+<!-- Bio  
+====== -->
 <!-- I'm a final-year Ph.D. student at Shanghai Jiao Tong University, Dept. of Computer Science and Engineering. My tutor is Prof. Jingwen Leng, and I mainly research on ML system, high-performance computing and computer architecture. -->
 <!-- I an AI system developer/researcher in PAI team of Tencent. I received the Ph.D. degree from Shanghai Jiao Tong University. My supervisor is Prof. Jingwen Leng.
 
 My search interests include ML system, high-performance computing and computer architecture. -->
 
 <!-- I am an ML system developer and researcher, currently working as a part of the AI Lab at Tencent. I earned my Ph.D. degree from Shanghai Jiao Tong University under the guidance of Prof. Jingwen Leng.-->
+## Bio
+
 I am currently a postdoctoral research fellow at the National University of Singapore (NUS), collaborating with [Prof. Jin Song Dong](https://www.comp.nus.edu.sg/~dongjs/). I earned my Ph.D. from Shanghai Jiao Tong University under the supervision of [Prof. Jingwen Leng](https://www.cs.sjtu.edu.cn/~leng-jw/).
 
 My research interests include machine learning systems, high-performance computing, and computer architecture. I am passionate about exploring innovative solutions in these fields and contributing to the advancement of technology.
 
+<br>
 
 <!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
 ## News
 
-- 2024.12: Started postdoc at NUS.
-- 2024.11 Our paper VQ-LLM is accepted to HPCA 202.
-- 2023.09 I receive my PhD from Shanghai Jiao Tong University.
+- [2024.12] Started postdoc at NUS.
+- [2024.11] Our paper VQ-LLM is accepted to HPCA 2025.
+- [2023.09] I received my Ph.D. from Shanghai Jiao Tong University.
 
-Education
-======
-* Ph.D in Shanghai Jiao Tong University, 2023
-* B.S. in Huazhong University of Science and Technology, 2018
+<!-- Education
+====== -->
 
-Work Experience
-===============
+## Education
+
+- Ph.D., Shanghai Jiao Tong University, 2023  
+- B.S., Huazhong University of Science and Technology, 2018
+
+<br>
+
+<!-- Work Experience
+=============== -->
+
+## Work Experience
+
 - 2023.10 - 2024.10: System Developer/Researcher 
   - Tencent AI Lab
 - Summer 2022: Research Intern
@@ -46,8 +57,13 @@ Work Experience
 - Summer 2020: Research Intern
   - T-Head Alibaba
   
-Publications
-======
+<!-- Publications
+====== -->
+
+<br>
+
+## Publications
+
 - Zihan Liu, Xinhao Luo, Junxian Guo, Wentao Ni, **Yangjie Zhou**, Yue Guan, Cong Guo, Weihao Cui, Yu Feng, Minyi GUo, Yuhao Zhu, Minjia Zhang, Jingwen Leng, Chen Jin. [VQ-LLM: High-performance Code Generation for Vector Quantization Augmented LLM Inference](#). Proceedings of the 31st IEEE International Symposium on High-Performance Computer Architecture. (HPCA 2025)
 - **Yangjie Zhou**, Honglin Zhu, Qian Qiu, Weihao Cui, Zihan Liu, Cong Guo, Siyuan Feng, Jintao Meng, Haidong Lan, Jingwen Leng, Wenxi Zhu, Minwen Deng. [Vortex: Efficient Sample-Free Dynamic Tensor Program Optimization via Hardware-aware Strategy Space Hierarchization](https://arxiv.org/abs/2409.01075). Preprint, 2024.
 - Yue Guan, Changming Yu, **Yangjie Zhou**, Jingwen Leng, Chao Li, Minyi Guo. [Fractal: Joint Multi-Level Sparse Pattern Tuning of Accuracy and Performance for DNN Pruning](#). Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, 2024. (ASPLOS 2024)
