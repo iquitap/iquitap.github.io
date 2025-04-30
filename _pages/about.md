@@ -26,9 +26,9 @@ My research interests include machine learning systems, high-performance computi
 <!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
 ## News
-
+- [2025.04] Our paper Voyager is accepted by ASPLOS 2025.
 - [2024.12] Started postdoc at NUS.
-- [2024.11] Our paper VQ-LLM is accepted to HPCA 2025.
+- [2024.11] Our paper VQ-LLM is accepted by HPCA 2025.
 - [2023.09] I received my Ph.D. from Shanghai Jiao Tong University.
 
 <!-- Education
