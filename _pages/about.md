@@ -26,6 +26,7 @@ My research interests include machine learning systems, high-performance computi
 <!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
 ## News
+- [2025.09] Our two papers (ClusterFusion, Yggdrasil) are accepted by NeurIPS 2025.
 - [2025.09] Our paper SWITCHBLADE is accepted by TCAD.
 - [2025.06] Our paper Helix is accepted by SC 2025.
 - [2025.04] Our paper Voyager is accepted by ASPLOS 2025.
