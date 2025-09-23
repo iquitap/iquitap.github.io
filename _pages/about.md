@@ -26,6 +26,7 @@ My research interests include machine learning systems, high-performance computi
 <!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
 ## News
+- [2025.09] Awarded the CCF Outstanding Doctoral Dissertation Award in Computer Architecture Nomination.
 - [2025.09] Our two papers (ClusterFusion, Yggdrasil) are accepted by NeurIPS 2025.
 - [2025.09] Our paper SWITCHBLADE is accepted by TCAD.
 - [2025.06] Our paper Helix is accepted by SC 2025.
@@ -66,7 +67,9 @@ My research interests include machine learning systems, high-performance computi
 <br>
 
 ## Publications
-- **Yangjie Zhou**, Zhihui Zhang, Shuwen Lu, Cong Guo, Jingwen Leng, Feng Zhang, Yufei Ma, Yun Liang, Minyi Guo. [A Full-Stack Framework for GNN Acceleration via Partition-Compiler-Architecture Co-Design](#). IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2025.
+- Xinhao Luo, Zihan Liu\*, **Yangjie Zhou\***, Shihan Fang, Ziyu Huang, Yu Feng, Chen Zhang, Shixuan Sun, Zhenzhe Zheng, Jingwen Leng, Minyi Guo. [ClusterFusion: Expanding Operator Fusion Scope for LLM Inference via Cluster-Level Collective Primitive](https://arxiv.org/abs/2508.18850). The Thirty-Ninth Annual Conference on Neural Information Processing Systems, 2025. (NeurIPS 2025). (\*Corresponding authors)
+- Yue Guan, Changming Yu, Shihan Fang, Weiming Hu, Zaifeng Pan, Zheng Wang, Zihan Liu, **Yangjie Zhou**, Yufei Ding, Minyi Guo, Jingwen Leng. [Yggdrasil: Bridging Dynamic Speculation and Static Runtime for Latency-Optimal Tree-Based LLM Decoding](#). The Thirty-Ninth Annual Conference on Neural Information Processing Systems, 2025. (NeurIPS 2025).
+- **Yangjie Zhou**, Zhihui Zhang, Shuwen Lu, Cong Guo, Jingwen Leng, Feng Zhang, Yufei Ma, Yun Liang, Minyi Guo. [A Full-Stack Framework for GNN Acceleration via Partition-Compiler-Architecture Co-Design](#). IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2025. (TCAD 2025).
 - **Yangjie Zhou**, Wenting Shen, Jingwen Leng, Shuwen Lu, Zihan Liu, Weihao Cui, Zhendong Zhang, Wencong Xiao, Baole Ai, Yong Li, Wei Lin, Deze Zeng, Yun Liang, Quan Chen, Ning Liu, Minyi Guo. [Voyager: Input-Adaptive Algebraic Transformations for High-Performance Graph Neural Networks](https://dl.acm.org/doi/10.1145/3676642.3736121). Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, 2025. (ASPLOS 2025)
 - **Yangjie Zhou**, Honglin Zhu, Qian Qiu, Weihao Cui, Zihan Liu, Peng Chen, Mohamed Wahib, Cong Guo, Siyuan Feng, Jintao Meng, Haidong Lan, Jingwen Leng, Yun Lin, Jin Song Dong, Wenxi Zhu, Minwen Deng. [A Sample-Free Compilation Framework for Efficient Dynamic Tensor Computation](https://www.researchgate.net/publication/395032163_A_Sample-Free_Compilation_Framework_for_Efficient_Dynamic_Tensor_Computation). Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis, 2025. (SC 2025).
 - Zihan Liu, Xinhao Luo, Junxian Guo, Wentao Ni, **Yangjie Zhou**, Yue Guan, Cong Guo, Weihao Cui, Yu Feng, Minyi Guo, Yuhao Zhu, Minjia Zhang, Jingwen Leng, Chen Jin. [VQ-LLM: High-performance Code Generation for Vector Quantization Augmented LLM Inference](https://arxiv.org/abs/2503.02236). Proceedings of the 31st IEEE International Symposium on High-Performance Computer Architecture. (HPCA 2025)
@@ -84,6 +87,7 @@ My research interests include machine learning systems, high-performance computi
 ==================== -->
 
 ## Honors and Services
+- 2025 CCF Outstanding Doctoral Dissertation Award in Computer Architecture Nomination
 - 2025 International Conference on Computer Science and Application Engineering, Reviewer
 - 2025 OSDI'25, Artifact Evaluation Committee
 - 2025 ACM Transactions on Internet Technology, Reviewer
