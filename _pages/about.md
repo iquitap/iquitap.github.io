@@ -21,7 +21,7 @@ I am currently a postdoctoral research fellow at the National University of Sing
 
 My research interests include machine learning systems, high-performance computing, and computer architecture. I am passionate about exploring innovative solutions in these fields and contributing to the advancement of technology.
 
-<br>
+<!-- <br> -->
 
 <!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
@@ -43,7 +43,7 @@ My research interests include machine learning systems, high-performance computi
 - Ph.D., Shanghai Jiao Tong University, 2023  
 - B.S., Huazhong University of Science and Technology, 2018
 
-<br>
+<!-- <br> -->
 
 <!-- Work Experience
 =============== -->
@@ -64,10 +64,70 @@ My research interests include machine learning systems, high-performance computi
 <!-- Publications
 ====== -->
 
-<br>
+<!-- <br> -->
 
+<!-- ## Publications -->
 ## Publications
-- Xinhao Luo, Zihan Liu\*, **Yangjie Zhou\***, Shihan Fang, Ziyu Huang, Yu Feng, Chen Zhang, Shixuan Sun, Zhenzhe Zheng, Jingwen Leng, Minyi Guo. [ClusterFusion: Expanding Operator Fusion Scope for LLM Inference via Cluster-Level Collective Primitive](https://arxiv.org/abs/2508.18850). The Thirty-Ninth Annual Conference on Neural Information Processing Systems, 2025. (NeurIPS 2025). (\*Corresponding authors)
+
+- **[NeurIPS'25]** **[ClusterFusion: Expanding Operator Fusion Scope for LLM Inference via Cluster-Level Collective Primitive](https://arxiv.org/abs/2508.18850)**  
+  Xinhao Luo, Zihan Liu\*, **Yangjie Zhou\***, Shihan Fang, Ziyu Huang, Yu Feng, Chen Zhang, Shixuan Sun, Zhenzhe Zheng, Jingwen Leng, Minyi Guo  
+  <small>The Thirty-Ninth Annual Conference on Neural Information Processing Systems · (\*Corresponding authors)</small>
+
+- **[NeurIPS'25]** **[Yggdrasil: Bridging Dynamic Speculation and Static Runtime for Latency-Optimal Tree-Based LLM Decoding](#)**  
+  Yue Guan, Changming Yu, Shihan Fang, Weiming Hu, Zaifeng Pan, Zheng Wang, Zihan Liu, **Yangjie Zhou**, Yufei Ding, Minyi Guo, Jingwen Leng  
+  <small>The Thirty-Ninth Annual Conference on Neural Information Processing Systems</small>
+
+- **[TCAD'25]** **[A Full-Stack Framework for GNN Acceleration via Partition-Compiler-Architecture Co-Design](#)**  
+  **Yangjie Zhou**, Zhihui Zhang, Shuwen Lu, Cong Guo, Jingwen Leng, Feng Zhang, Yufei Ma, Yun Liang, Minyi Guo  
+  <small>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</small>
+
+- **[ASPLOS'25]** **[Voyager: Input-Adaptive Algebraic Transformations for High-Performance Graph Neural Networks](https://dl.acm.org/doi/10.1145/3676642.3736121)**  
+  **Yangjie Zhou**, Wenting Shen, Jingwen Leng, Shuwen Lu, Zihan Liu, Weihao Cui, Zhendong Zhang, Wencong Xiao, Baole Ai, Yong Li, Wei Lin, Deze Zeng, Yun Liang, Quan Chen, Ning Liu, Minyi Guo  
+  <small>The 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems</small>
+
+- **[SC'25]** **[A Sample-Free Compilation Framework for Efficient Dynamic Tensor Computation](https://www.researchgate.net/publication/395032163_A_Sample-Free_Compilation_Framework_for_Efficient_Dynamic_Tensor_Computation)**  
+  **Yangjie Zhou**, Honglin Zhu, Qian Qiu, Weihao Cui, Zihan Liu, Peng Chen, Mohamed Wahib, Cong Guo, Siyuan Feng, Jintao Meng, Haidong Lan, Jingwen Leng, Yun Lin, Jin Song Dong, Wenxi Zhu, Minwen Deng  
+  <small>The International Conference for High Performance Computing, Networking, Storage and Analysis</small>
+
+- **[HPCA'25]** **[VQ-LLM: High-performance Code Generation for Vector Quantization Augmented LLM Inference](https://arxiv.org/abs/2503.02236)**  
+  Zihan Liu, Xinhao Luo, Junxian Guo, Wentao Ni, **Yangjie Zhou**, Yue Guan, Cong Guo, Weihao Cui, Yu Feng, Minyi Guo, Yuhao Zhu, Minjia Zhang, Jingwen Leng, Chen Jin  
+  <small>The 31st IEEE International Symposium on High-Performance Computer Architecture</small>
+
+<!-- - **[Preprint]** **[Vortex: Efficient Sample-Free Dynamic Tensor Program Optimization via Hardware-aware Strategy Space Hierarchization](https://arxiv.org/abs/2409.01075)**   -->
+  <!-- **Yangjie Zhou**, Honglin Zhu, Qian Qiu, Weihao Cui, Zihan Liu, Cong Guo, Siyuan Feng, Jintao Meng, Haidong Lan, Jingwen Leng, Wenxi Zhu, Minwen Deng   -->
+
+- **[ASPLOS'24]** **[Fractal: Joint Multi-Level Sparse Pattern Tuning of Accuracy and Performance for DNN Pruning](#)**  
+  Yue Guan, Changming Yu, **Yangjie Zhou**, Jingwen Leng, Chao Li, Minyi Guo  
+  <small>The 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems</small>
+
+- **[ASPLOS'23]** **[uGrapher: High-Performance Graph Operator Computation via Unified Abstraction for Graph Neural Networks](https://dl.acm.org/doi/10.1145/3575693.3575723)**  
+  **Yangjie Zhou**, Jingwen Leng, Yaoxu Song, Shuwen Lu, Mian Wang, Chao Li, Minyi Guo, Wenting Shen, Yong Li, Wei Lin, Xiangwen Liu, Hanqing Wu  
+  <small>The 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems</small>
+
+- **[CF'23]** **[AdaptGear: Accelerating GNN Training via Adaptive Subgraph-Level Kernels on GPUs](https://dl.acm.org/doi/abs/10.1145/3587135.3592199)**  
+  **Yangjie Zhou**, Yaoxu Song, Jingwen Leng, Zihan Liu, Weihao Cui, Zhendong Zhang, Cong Guo, Quan Chen, Li Li, Minyi Guo  
+  <small>The 20th ACM International Conference on Computing Frontiers</small>
+
+- **[CF'23]** **[DistSim: A performance model of large-scale hybrid distributed DNN training](https://dl.acm.org/doi/abs/10.1145/3587135.3592200)**  
+  Guandong Lu, Runzhe Chen, Yakai Wang, **Yangjie Zhou**, Rui Zhang, Zheng Hu, Yanming Miao, Zhifang Cai, Li Li, Jingwen Leng, Minyi Guo  
+  <small>The 20th ACM International Conference on Computing Frontiers</small>
+
+- **[Arxiv]** **[Efficient Adaptive Activation Rounding for Post-Training Quantization](https://arxiv.org/pdf/2208.11945)**  
+  Zhengyi Li, Cong Guo, Zhanda Zhu, **Yangjie Zhou**, Yuxian Qiu, Xiaotian Gao, Jingwen Leng, Minyi Guo  
+
+- **[IISWC'21]** **[Characterizing and demystifying the implicit convolution algorithm on commercial matrix-multiplication accelerators](https://arxiv.org/abs/2110.03901)**  
+  **Yangjie Zhou**, Mengtian Yang, Cong Guo, Jingwen Leng, Yun Liang, Quan Chen, Minyi Guo, Yuhao Zhu  
+  <small>IEEE International Symposium on Workload Characterization</small>
+
+- **[DAC'20]** **[TPUSim: ISA Design and Optimization for Fused Architecture Based Training Accelerator](https://www.facebook.com/groups/543081893039790/)**  
+  **Yangjie Zhou**, Jingwen Leng, Mengtian Yang, Zhihui Zhang, Yakai Wang, Chen Zhang, Minyi Guo, Yuhao Zhu  
+  <small>ACM/IEEE Design Automation Conference (Poster)</small>
+
+- **[DAC'20]** **[Balancing efficiency and flexibility for DNN acceleration via temporal GPU-systolic array integration](https://arxiv.org/abs/2002.08326)**  
+  Cong Guo, **Yangjie Zhou**, Jingwen Leng, Yuhao Zhu, Zidong Du, Quan Chen, Chao Li, Bin Yao, Minyi Guo  
+  <small>ACM/IEEE Design Automation Conference</small>
+
+<!-- - Xinhao Luo, Zihan Liu\*, **Yangjie Zhou\***, Shihan Fang, Ziyu Huang, Yu Feng, Chen Zhang, Shixuan Sun, Zhenzhe Zheng, Jingwen Leng, Minyi Guo. [ClusterFusion: Expanding Operator Fusion Scope for LLM Inference via Cluster-Level Collective Primitive](https://arxiv.org/abs/2508.18850). The Thirty-Ninth Annual Conference on Neural Information Processing Systems, 2025. (NeurIPS 2025). (\*Corresponding authors)
 - Yue Guan, Changming Yu, Shihan Fang, Weiming Hu, Zaifeng Pan, Zheng Wang, Zihan Liu, **Yangjie Zhou**, Yufei Ding, Minyi Guo, Jingwen Leng. [Yggdrasil: Bridging Dynamic Speculation and Static Runtime for Latency-Optimal Tree-Based LLM Decoding](#). The Thirty-Ninth Annual Conference on Neural Information Processing Systems, 2025. (NeurIPS 2025).
 - **Yangjie Zhou**, Zhihui Zhang, Shuwen Lu, Cong Guo, Jingwen Leng, Feng Zhang, Yufei Ma, Yun Liang, Minyi Guo. [A Full-Stack Framework for GNN Acceleration via Partition-Compiler-Architecture Co-Design](#). IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 2025. (TCAD 2025).
 - **Yangjie Zhou**, Wenting Shen, Jingwen Leng, Shuwen Lu, Zihan Liu, Weihao Cui, Zhendong Zhang, Wencong Xiao, Baole Ai, Yong Li, Wei Lin, Deze Zeng, Yun Liang, Quan Chen, Ning Liu, Minyi Guo. [Voyager: Input-Adaptive Algebraic Transformations for High-Performance Graph Neural Networks](https://dl.acm.org/doi/10.1145/3676642.3736121). Proceedings of the 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, 2025. (ASPLOS 2025)
@@ -81,7 +141,7 @@ My research interests include machine learning systems, high-performance computi
 - Zhengyi Li, Cong Guo, Zhanda Zhu, **Yangjie Zhou**, Yuxian Qiu, Xiaotian Gao, Jingwen Leng, Minyi Guo. [Efficient Adaptive Activation Rounding for Post-Training Quantization](https://arxiv.org/pdf/2208.11945). Preprint.
 - **Yangjie Zhou**, Mengtian Yang, Cong Guo, Jingwen Leng, Yun Liang, Quan Chen, Minyi Guo, Yuhao Zhu. [Characterizing and demystifying the implicit convolution algorithm on commercial matrix-multiplication accelerators](https://arxiv.org/abs/2110.03901). 2021 IEEE International Symposium on Workload Characterization. (IISWC 2021)
 - **Yangjie Zhou**, Jingwen Leng, Mengtian Yang, Zhihui Zhang, Yakai Wang, Chen Zhang, Minyi Guo, Yuhao Zhu. [TPUSim: ISA Design and Optimization for Fused Architecture Based Training Accelerator](https://www.facebook.com/groups/543081893039790/). Poster. 2020 57th ACM/IEEE Design Automation Conference (DAC 2020)(Poster)
-- Cong Guo, **Yangjie Zhou**, Jingwen Leng, Yuhao Zhu, Zidong Du, Quan Chen, Chao Li, Bin Yao, Minyi Guo. [Balancing efficiency and flexibility for DNN acceleration via temporal GPU-systolic array integration](https://arxiv.org/abs/2002.08326). 2020 57th ACM/IEEE Design Automation Conference. (DAC 2020)
+- Cong Guo, **Yangjie Zhou**, Jingwen Leng, Yuhao Zhu, Zidong Du, Quan Chen, Chao Li, Bin Yao, Minyi Guo. [Balancing efficiency and flexibility for DNN acceleration via temporal GPU-systolic array integration](https://arxiv.org/abs/2002.08326). 2020 57th ACM/IEEE Design Automation Conference. (DAC 2020) -->
 
 <!-- Honors and Services
 ==================== -->
