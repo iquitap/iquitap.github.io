@@ -26,7 +26,8 @@ My research interests include machine learning systems, high-performance computi
 <!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
 ## News
-- [2025.09] Awarded the CCF Outstanding Doctoral Dissertation Award in Computer Architecture Nomination.
+- [2025.11] Our paper FlashFuser is accepted by HPCA 2026. Congratulations to Ziyu!
+- [2025.09] Awarded the CCF Outstanding Doctoral Dissertation Award Nomination in Computer Architecture.
 - [2025.09] Our two papers (ClusterFusion, Yggdrasil) are accepted by NeurIPS 2025.
 - [2025.09] Our paper SWITCHBLADE is accepted by TCAD.
 - [2025.06] Our paper Helix is accepted by SC 2025.
@@ -147,7 +148,7 @@ My research interests include machine learning systems, high-performance computi
 ==================== -->
 
 ## Honors and Services
-- 2025 CCF Outstanding Doctoral Dissertation Award in Computer Architecture Nomination
+- 2025 CCF Outstanding Doctoral Dissertation Award Nomination in Computer Architecture
 - 2025 International Conference on Computer Science and Application Engineering, Reviewer
 - 2025 OSDI'25, Artifact Evaluation Committee
 - 2025 ACM Transactions on Internet Technology, Reviewer
