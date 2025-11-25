@@ -69,7 +69,10 @@ My research interests include machine learning systems, high-performance computi
 
 <!-- ## Publications -->
 ## Publications
-
+- **[HPCA'26]** **[FlashFuser: Expanding the Scale of Kernel Fusion for Compute-Intensive operators via Inter-Core Connection](#)**  
+  Ziyu Huang†, **Yangjie Zhou†**, Zihan Liu, Xinhao Luo, Yijia Diao, Minyi Guo, Jidong Zhai, Yu Feng, Chen Zhang, Anbang Wu, Jingwen Leng  
+  <small>The 32nd IEEE International Symposium on High-Performance Computer Architecture · (†Co-first authors)</small>
+  
 - **[NeurIPS'25]** **[ClusterFusion: Expanding Operator Fusion Scope for LLM Inference via Cluster-Level Collective Primitive](https://arxiv.org/abs/2508.18850)**  
   Xinhao Luo, Zihan Liu\*, **Yangjie Zhou\***, Shihan Fang, Ziyu Huang, Yu Feng, Chen Zhang, Shixuan Sun, Zhenzhe Zheng, Jingwen Leng, Minyi Guo  
   <small>The Thirty-Ninth Annual Conference on Neural Information Processing Systems · (\*Corresponding authors)</small>
@@ -148,6 +151,7 @@ My research interests include machine learning systems, high-performance computi
 ==================== -->
 
 ## Honors and Services
+- 2025 ACM Transactions on Embedded Computing Systems, Reviewer
 - 2025 CCF Outstanding Doctoral Dissertation Award Nomination in Computer Architecture
 - 2025 International Conference on Computer Science and Application Engineering, Reviewer
 - 2025 OSDI'25, Artifact Evaluation Committee
