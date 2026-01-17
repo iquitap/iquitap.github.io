@@ -26,6 +26,7 @@ My research interests include machine learning systems, high-performance computi
 <!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
 ## News
+- [2026.01] Our paper PD-Multiplexing is accepted by ASPLOS 2026.
 - [2025.11] Our paper FlashFuser is accepted by HPCA 2026. Congratulations to Ziyu!
 - [2025.09] Awarded the CCF Outstanding Doctoral Dissertation Award Nomination in Computer Architecture.
 - [2025.09] Our two papers (ClusterFusion, Yggdrasil) are accepted by NeurIPS 2025.
@@ -69,13 +70,17 @@ My research interests include machine learning systems, high-performance computi
 
 <!-- ## Publications -->
 ## Publications
+- **[ASPLOS'26]** **[PD-Multiplexing: Towards High-Goodput LLM Serving with Prefill-decode Multiplexing](#)**  
+  Yukang Chen, Weihao Cui, Han Zhao, Ziyi Xu, Xiaoze Fan, Xusheng Chen, **Yangjie Zhou**, Shixuan Sun, Bingsheng He, Quan Chen  
+  <small>The 31st ACM International Conference on Architectural Support for Programming Languages and Operating Systems</small>
+
 - **[HPCA'26]** **[FlashFuser: Expanding the Scale of Kernel Fusion for Compute-Intensive operators via Inter-Core Connection](#)**  
   Ziyu Huang^, **Yangjie Zhou^**, Zihan Liu, Xinhao Luo, Yijia Diao, Minyi Guo, Jidong Zhai, Yu Feng, Chen Zhang, Anbang Wu, Jingwen Leng  
-  <small>The 32nd IEEE International Symposium on High-Performance Computer Architecture · (^Co-first authors)</small>
+  <small>The 32nd IEEE International Symposium on High-Performance Computer Architecture (^Co-first authors)</small>
   
 - **[NeurIPS'25]** **[ClusterFusion: Expanding Operator Fusion Scope for LLM Inference via Cluster-Level Collective Primitive](https://arxiv.org/abs/2508.18850)**  
   Xinhao Luo, Zihan Liu\*, **Yangjie Zhou\***, Shihan Fang, Ziyu Huang, Yu Feng, Chen Zhang, Shixuan Sun, Zhenzhe Zheng, Jingwen Leng, Minyi Guo  
-  <small>The Thirty-Ninth Annual Conference on Neural Information Processing Systems · (\*Corresponding authors)</small>
+  <small>The Thirty-Ninth Annual Conference on Neural Information Processing Systems (\*Corresponding authors)</small>
 
 
 - **[TCAD'25]** **[A Full-Stack Framework for GNN Acceleration via Partition-Compiler-Architecture Co-Design](#)**  
