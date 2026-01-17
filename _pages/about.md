@@ -70,9 +70,6 @@ My research interests include machine learning systems, high-performance computi
 
 <!-- ## Publications -->
 ## Publications
-- **[ASPLOS'26]** **[PD-Multiplexing: Towards High-Goodput LLM Serving with Prefill-decode Multiplexing](#)**  
-  Yukang Chen, Weihao Cui, Han Zhao, Ziyi Xu, Xiaoze Fan, Xusheng Chen, **Yangjie Zhou**, Shixuan Sun, Bingsheng He, Quan Chen  
-  <small>The 31st ACM International Conference on Architectural Support for Programming Languages and Operating Systems</small>
 
 - **[HPCA'26]** **[FlashFuser: Expanding the Scale of Kernel Fusion for Compute-Intensive operators via Inter-Core Connection](#)**  
   Ziyu Huang^, **Yangjie Zhou^**, Zihan Liu, Xinhao Luo, Yijia Diao, Minyi Guo, Jidong Zhai, Yu Feng, Chen Zhang, Anbang Wu, Jingwen Leng  
@@ -111,6 +108,10 @@ My research interests include machine learning systems, high-performance computi
 - **[DAC'20]** **[TPUSim: ISA Design and Optimization for Fused Architecture Based Training Accelerator](https://www.facebook.com/groups/543081893039790/)**  
   **Yangjie Zhou**, Jingwen Leng, Mengtian Yang, Zhihui Zhang, Yakai Wang, Chen Zhang, Minyi Guo, Yuhao Zhu  
   <small>ACM/IEEE Design Automation Conference (Poster)</small>
+
+- **[ASPLOS'26]** **[PD-Multiplexing: Towards High-Goodput LLM Serving with Prefill-decode Multiplexing](#)**  
+  Yukang Chen, Weihao Cui, Han Zhao, Ziyi Xu, Xiaoze Fan, Xusheng Chen, **Yangjie Zhou**, Shixuan Sun, Bingsheng He, Quan Chen  
+  <small>The 31st ACM International Conference on Architectural Support for Programming Languages and Operating Systems</small>
 
 - **[HPCA'25]** **[VQ-LLM: High-performance Code Generation for Vector Quantization Augmented LLM Inference](https://arxiv.org/abs/2503.02236)**  
   Zihan Liu, Xinhao Luo, Junxian Guo, Wentao Ni, **Yangjie Zhou**, Yue Guan, Cong Guo, Weihao Cui, Yu Feng, Minyi Guo, Yuhao Zhu, Minjia Zhang, Jingwen Leng, Chen Jin  
