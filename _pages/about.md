@@ -26,6 +26,7 @@ My research interests include machine learning systems, high-performance computi
 <!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
 ## News
+- [2026.02] Our paper eLLM is accepted by DAC 2026.
 - [2026.01] Our paper PD-Multiplexing is accepted by ASPLOS 2026.
 - [2025.11] Our paper FlashFuser is accepted by HPCA 2026. Congratulations to Ziyu!
 - [2025.09] Awarded the CCF Outstanding Doctoral Dissertation Award Nomination in Computer Architecture.
@@ -164,6 +165,8 @@ My research interests include machine learning systems, high-performance computi
 ==================== -->
 
 ## Honors and Services
+- 2026 IEEE Transactions on Artificial Intelligence, Reviewer
+- 2026 Annual Meeting of the Association for Computational Linguistics, Reviewer
 - 2025 ACM Transactions on Embedded Computing Systems, Reviewer
 - 2025 CCF Outstanding Doctoral Dissertation Award Nomination in Computer Architecture
 - 2025 International Conference on Computer Science and Application Engineering, Reviewer
