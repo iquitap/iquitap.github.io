@@ -26,6 +26,7 @@ My research interests include machine learning systems, high-performance computi
 <!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
 ## News
+- [2026.04] Our paper CuBridge is accepted by ACL 2026. Congratulations to Xing Ma!
 - [2026.02] Our paper eLLM is accepted by DAC 2026.
 - [2026.01] Our paper PD-Multiplexing is accepted by ASPLOS 2026.
 - [2025.11] Our paper FlashFuser is accepted by HPCA 2026. Congratulations to Ziyu!
