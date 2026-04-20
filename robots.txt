@@ -1,0 +1,10 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow crawling of admin and draft areas
+Disallow: /_drafts/
+Disallow: /files/
+
+# Sitemap location
+Sitemap: https://iquitap.github.io/sitemap.xml
