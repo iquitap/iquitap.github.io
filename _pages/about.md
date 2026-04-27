@@ -73,6 +73,10 @@ My research interests include machine learning systems, high-performance computi
 <!-- ## Publications -->
 ## Publications
 
+- **[ACL'26]** **[CuBridge: An LLM-Based Framework for Understanding and Reconstructing High-Performance Attention Kernels](#)**  
+  Xing Ma^, **Yangjie Zhou^\***, Wu Sun, Zihan Liu, Jingwen Leng, Yun Lin*, Shixuan Sun, Minyi Guo, Jin Song Dong  
+  <small>The 64th Annual Meeting of the Association for Computational Linguistics (^Co-first authors, \*Co-corresponding authors)</small>
+
 - **[HPCA'26]** **[FlashFuser: Expanding the Scale of Kernel Fusion for Compute-Intensive operators via Inter-Core Connection](#)**  
   Ziyu Huang^, **Yangjie Zhou^**, Zihan Liu, Xinhao Luo, Yijia Diao, Minyi Guo, Jidong Zhai, Yu Feng, Chen Zhang, Anbang Wu, Jingwen Leng  
   <small>The 32nd IEEE International Symposium on High-Performance Computer Architecture (^Co-first authors)</small>
