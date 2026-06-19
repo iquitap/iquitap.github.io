@@ -26,18 +26,18 @@ My research interests include machine learning systems, high-performance computi
 <!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
 ## News
-- [2026.04] Our paper CuBridge is accepted by ACL 2026. Congratulations to Xing Ma!
-- [2026.02] Our paper eLLM is accepted by DAC 2026.
-- [2026.01] Our paper PD-Multiplexing is accepted by ASPLOS 2026.
-- [2025.11] Our paper FlashFuser is accepted by HPCA 2026. Congratulations to Ziyu!
-- [2025.09] Awarded the CCF Outstanding Doctoral Dissertation Award Nomination in Computer Architecture.
-- [2025.09] Our two papers (ClusterFusion, Yggdrasil) are accepted by NeurIPS 2025.
-- [2025.09] Our paper SWITCHBLADE is accepted by TCAD.
-- [2025.06] Our paper Helix is accepted by SC 2025.
-- [2025.04] Our paper Voyager is accepted by ASPLOS 2025.
-- [2024.12] Started postdoc at NUS.
-- [2024.11] Our paper VQ-LLM is accepted by HPCA 2025.
-- [2023.09] I received my Ph.D. from Shanghai Jiao Tong University.
+- <span class="news-date">[2026.04]</span> Our paper CuBridge is accepted by ACL 2026. Congratulations to Xing Ma!
+- <span class="news-date">[2026.02]</span> Our paper eLLM is accepted by DAC 2026.
+- <span class="news-date">[2026.01]</span> Our paper PD-Multiplexing is accepted by ASPLOS 2026.
+- <span class="news-date">[2025.11]</span> Our paper FlashFuser is accepted by HPCA 2026. Congratulations to Ziyu!
+- <span class="news-date">[2025.09]</span> Awarded the CCF Outstanding Doctoral Dissertation Award Nomination in Computer Architecture.
+- <span class="news-date">[2025.09]</span> Our two papers (ClusterFusion, Yggdrasil) are accepted by NeurIPS 2025.
+- <span class="news-date">[2025.09]</span> Our paper SWITCHBLADE is accepted by TCAD.
+- <span class="news-date">[2025.06]</span> Our paper Helix is accepted by SC 2025.
+- <span class="news-date">[2025.04]</span> Our paper Voyager is accepted by ASPLOS 2025.
+- <span class="news-date">[2024.12]</span> Started postdoc at NUS.
+- <span class="news-date">[2024.11]</span> Our paper VQ-LLM is accepted by HPCA 2025.
+- <span class="news-date">[2023.09]</span> I received my Ph.D. from Shanghai Jiao Tong University.
 
 <!-- Education
 ====== -->
@@ -72,83 +72,81 @@ My research interests include machine learning systems, high-performance computi
 
 <!-- ## Publications -->
 ## Publications
+{: #publications}
 
-- **[ACL'26]** **[CuBridge: An LLM-Based Framework for Understanding and Reconstructing High-Performance Attention Kernels](#)**  
+<div class="pub-list" markdown="1">
+
+- <span class="venue-badge venue-badge--top">ACL'26</span> **[CuBridge: An LLM-Based Framework for Understanding and Reconstructing High-Performance Attention Kernels](https://arxiv.org/abs/2605.05023)**  
   Xing Ma^, **Yangjie Zhou^\***, Wu Sun, Zihan Liu, Jingwen Leng, Yun Lin*, Shixuan Sun, Minyi Guo, Jin Song Dong  
   <small>The 64th Annual Meeting of the Association for Computational Linguistics (^Co-first authors, \*Co-corresponding authors)</small>
 
-- **[HPCA'26]** **[FlashFuser: Expanding the Scale of Kernel Fusion for Compute-Intensive operators via Inter-Core Connection](#)**  
+- <span class="venue-badge venue-badge--top">HPCA'26</span> **[FlashFuser: Expanding the Scale of Kernel Fusion for Compute-Intensive operators via Inter-Core Connection](https://arxiv.org/abs/2512.12949)**  
   Ziyu Huang^, **Yangjie Zhou^**, Zihan Liu, Xinhao Luo, Yijia Diao, Minyi Guo, Jidong Zhai, Yu Feng, Chen Zhang, Anbang Wu, Jingwen Leng  
   <small>The 32nd IEEE International Symposium on High-Performance Computer Architecture (^Co-first authors)</small>
-  
-- **[NeurIPS'25]** **[ClusterFusion: Expanding Operator Fusion Scope for LLM Inference via Cluster-Level Collective Primitive](https://arxiv.org/abs/2508.18850)**  
+
+- <span class="venue-badge venue-badge--top">NeurIPS'25</span> **[ClusterFusion: Expanding Operator Fusion Scope for LLM Inference via Cluster-Level Collective Primitive](https://arxiv.org/abs/2508.18850)**  
   Xinhao Luo, Zihan Liu\*, **Yangjie Zhou\***, Shihan Fang, Ziyu Huang, Yu Feng, Chen Zhang, Shixuan Sun, Zhenzhe Zheng, Jingwen Leng, Minyi Guo  
   <small>The Thirty-Ninth Annual Conference on Neural Information Processing Systems (\*Corresponding authors)</small>
 
-
-- **[TCAD'25]** **[A Full-Stack Framework for GNN Acceleration via Partition-Compiler-Architecture Co-Design](#)**  
+- <span class="venue-badge venue-badge--journal">TCAD'25</span> **[A Full-Stack Framework for GNN Acceleration via Partition-Compiler-Architecture Co-Design](https://ieeexplore.ieee.org/document/11165431)**  
   **Yangjie Zhou**, Zhihui Zhang, Shuwen Lu, Cong Guo, Jingwen Leng, Feng Zhang, Yufei Ma, Yun Liang, Minyi Guo  
   <small>IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</small>
 
-- **[ASPLOS'25]** **[Voyager: Input-Adaptive Algebraic Transformations for High-Performance Graph Neural Networks](https://dl.acm.org/doi/10.1145/3676642.3736121)**  
+- <span class="venue-badge venue-badge--top">ASPLOS'25</span> **[Voyager: Input-Adaptive Algebraic Transformations for High-Performance Graph Neural Networks](https://dl.acm.org/doi/10.1145/3676642.3736121)**  
   **Yangjie Zhou**, Wenting Shen, Jingwen Leng, Shuwen Lu, Zihan Liu, Weihao Cui, Zhendong Zhang, Wencong Xiao, Baole Ai, Yong Li, Wei Lin, Deze Zeng, Yun Liang, Quan Chen, Ning Liu, Minyi Guo  
   <small>The 30th ACM International Conference on Architectural Support for Programming Languages and Operating Systems</small>
 
-- **[SC'25]** **[A Sample-Free Compilation Framework for Efficient Dynamic Tensor Computation](https://www.researchgate.net/publication/395032163_A_Sample-Free_Compilation_Framework_for_Efficient_Dynamic_Tensor_Computation)**  
+- <span class="venue-badge venue-badge--top">SC'25</span> **[A Sample-Free Compilation Framework for Efficient Dynamic Tensor Computation](https://www.researchgate.net/publication/395032163_A_Sample-Free_Compilation_Framework_for_Efficient_Dynamic_Tensor_Computation)**  
   **Yangjie Zhou**, Honglin Zhu, Qian Qiu, Weihao Cui, Zihan Liu, Peng Chen, Mohamed Wahib, Cong Guo, Siyuan Feng, Jintao Meng, Haidong Lan, Jingwen Leng, Yun Lin, Jin Song Dong, Wenxi Zhu, Minwen Deng  
   <small>The International Conference for High Performance Computing, Networking, Storage and Analysis</small>
 
-
-- **[ASPLOS'23]** **[uGrapher: High-Performance Graph Operator Computation via Unified Abstraction for Graph Neural Networks](https://dl.acm.org/doi/10.1145/3575693.3575723)**  
+- <span class="venue-badge venue-badge--top">ASPLOS'23</span> **[uGrapher: High-Performance Graph Operator Computation via Unified Abstraction for Graph Neural Networks](https://dl.acm.org/doi/10.1145/3575693.3575723)**  
   **Yangjie Zhou**, Jingwen Leng, Yaoxu Song, Shuwen Lu, Mian Wang, Chao Li, Minyi Guo, Wenting Shen, Yong Li, Wei Lin, Xiangwen Liu, Hanqing Wu  
   <small>The 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems</small>
 
-- **[CF'23]** **[AdaptGear: Accelerating GNN Training via Adaptive Subgraph-Level Kernels on GPUs](https://dl.acm.org/doi/abs/10.1145/3587135.3592199)**  
+- <span class="venue-badge">CF'23</span> **[AdaptGear: Accelerating GNN Training via Adaptive Subgraph-Level Kernels on GPUs](https://dl.acm.org/doi/abs/10.1145/3587135.3592199)**  
   **Yangjie Zhou**, Yaoxu Song, Jingwen Leng, Zihan Liu, Weihao Cui, Zhendong Zhang, Cong Guo, Quan Chen, Li Li, Minyi Guo  
   <small>The 20th ACM International Conference on Computing Frontiers</small>
 
-- **[IISWC'21]** **[Characterizing and demystifying the implicit convolution algorithm on commercial matrix-multiplication accelerators](https://arxiv.org/abs/2110.03901)**  
+- <span class="venue-badge">IISWC'21</span> **[Characterizing and demystifying the implicit convolution algorithm on commercial matrix-multiplication accelerators](https://arxiv.org/abs/2110.03901)**  
   **Yangjie Zhou**, Mengtian Yang, Cong Guo, Jingwen Leng, Yun Liang, Quan Chen, Minyi Guo, Yuhao Zhu  
   <small>IEEE International Symposium on Workload Characterization</small>
 
-- **[DAC'20]** **[TPUSim: ISA Design and Optimization for Fused Architecture Based Training Accelerator](https://www.facebook.com/groups/543081893039790/)**  
+- <span class="venue-badge">DAC'20</span> **[TPUSim: ISA Design and Optimization for Fused Architecture Based Training Accelerator](https://www.facebook.com/groups/543081893039790/)**  
   **Yangjie Zhou**, Jingwen Leng, Mengtian Yang, Zhihui Zhang, Yakai Wang, Chen Zhang, Minyi Guo, Yuhao Zhu  
   <small>ACM/IEEE Design Automation Conference (Poster)</small>
 
-- **[ASPLOS'26]** **[PD-Multiplexing: Towards High-Goodput LLM Serving with Prefill-decode Multiplexing](#)**  
+- <span class="venue-badge venue-badge--top">ASPLOS'26</span> **[PD-Multiplexing: Towards High-Goodput LLM Serving with Prefill-decode Multiplexing](https://dl.acm.org/doi/10.1145/3779212.3790236)**  
   Yukang Chen, Weihao Cui, Han Zhao, Ziyi Xu, Xiaoze Fan, Xusheng Chen, **Yangjie Zhou**, Shixuan Sun, Bingsheng He, Quan Chen  
   <small>The 31st ACM International Conference on Architectural Support for Programming Languages and Operating Systems</small>
 
-- **[HPCA'25]** **[VQ-LLM: High-performance Code Generation for Vector Quantization Augmented LLM Inference](https://arxiv.org/abs/2503.02236)**  
+- <span class="venue-badge venue-badge--top">HPCA'25</span> **[VQ-LLM: High-performance Code Generation for Vector Quantization Augmented LLM Inference](https://arxiv.org/abs/2503.02236)**  
   Zihan Liu, Xinhao Luo, Junxian Guo, Wentao Ni, **Yangjie Zhou**, Yue Guan, Cong Guo, Weihao Cui, Yu Feng, Minyi Guo, Yuhao Zhu, Minjia Zhang, Jingwen Leng, Chen Jin  
   <small>The 31st IEEE International Symposium on High-Performance Computer Architecture</small>
 
 <!-- - **[Preprint]** **[Vortex: Efficient Sample-Free Dynamic Tensor Program Optimization via Hardware-aware Strategy Space Hierarchization](https://arxiv.org/abs/2409.01075)**   -->
   <!-- **Yangjie Zhou**, Honglin Zhu, Qian Qiu, Weihao Cui, Zihan Liu, Cong Guo, Siyuan Feng, Jintao Meng, Haidong Lan, Jingwen Leng, Wenxi Zhu, Minwen Deng   -->
 
-- **[NeurIPS'25]** **[Yggdrasil: Bridging Dynamic Speculation and Static Runtime for Latency-Optimal Tree-Based LLM Decoding](#)**  
+- <span class="venue-badge venue-badge--top">NeurIPS'25</span> **[Yggdrasil: Bridging Dynamic Speculation and Static Runtime for Latency-Optimal Tree-Based LLM Decoding](https://arxiv.org/abs/2512.23858)**  
   Yue Guan, Changming Yu, Shihan Fang, Weiming Hu, Zaifeng Pan, Zheng Wang, Zihan Liu, **Yangjie Zhou**, Yufei Ding, Minyi Guo, Jingwen Leng  
   <small>The Thirty-Ninth Annual Conference on Neural Information Processing Systems</small>
 
-
-
-- **[ASPLOS'24]** **[Fractal: Joint Multi-Level Sparse Pattern Tuning of Accuracy and Performance for DNN Pruning](https://dl.acm.org/doi/10.1145/3620666.3651351)**  
+- <span class="venue-badge venue-badge--top">ASPLOS'24</span> **[Fractal: Joint Multi-Level Sparse Pattern Tuning of Accuracy and Performance for DNN Pruning](https://dl.acm.org/doi/10.1145/3620666.3651351)**  
   Yue Guan, Changming Yu, **Yangjie Zhou**, Jingwen Leng, Chao Li, Minyi Guo  
   <small>The 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems</small>
 
-
-- **[CF'23]** **[DistSim: A performance model of large-scale hybrid distributed DNN training](https://dl.acm.org/doi/abs/10.1145/3587135.3592200)**  
+- <span class="venue-badge">CF'23</span> **[DistSim: A performance model of large-scale hybrid distributed DNN training](https://dl.acm.org/doi/abs/10.1145/3587135.3592200)**  
   Guandong Lu, Runzhe Chen, Yakai Wang, **Yangjie Zhou**, Rui Zhang, Zheng Hu, Yanming Miao, Zhifang Cai, Li Li, Jingwen Leng, Minyi Guo  
   <small>The 20th ACM International Conference on Computing Frontiers</small>
 
-- **[Arxiv]** **[Efficient Adaptive Activation Rounding for Post-Training Quantization](https://arxiv.org/pdf/2208.11945)**  
+- <span class="venue-badge venue-badge--preprint">Arxiv</span> **[Efficient Adaptive Activation Rounding for Post-Training Quantization](https://arxiv.org/pdf/2208.11945)**  
   Zhengyi Li, Cong Guo, Zhanda Zhu, **Yangjie Zhou**, Yuxian Qiu, Xiaotian Gao, Jingwen Leng, Minyi Guo  
 
-
-
-- **[DAC'20]** **[Balancing efficiency and flexibility for DNN acceleration via temporal GPU-systolic array integration](https://arxiv.org/abs/2002.08326)**  
+- <span class="venue-badge">DAC'20</span> **[Balancing efficiency and flexibility for DNN acceleration via temporal GPU-systolic array integration](https://arxiv.org/abs/2002.08326)**  
   Cong Guo, **Yangjie Zhou**, Jingwen Leng, Yuhao Zhu, Zidong Du, Quan Chen, Chao Li, Bin Yao, Minyi Guo  
   <small>ACM/IEEE Design Automation Conference</small>
+
+</div>
 
 <!-- - Xinhao Luo, Zihan Liu\*, **Yangjie Zhou\***, Shihan Fang, Ziyu Huang, Yu Feng, Chen Zhang, Shixuan Sun, Zhenzhe Zheng, Jingwen Leng, Minyi Guo. [ClusterFusion: Expanding Operator Fusion Scope for LLM Inference via Cluster-Level Collective Primitive](https://arxiv.org/abs/2508.18850). The Thirty-Ninth Annual Conference on Neural Information Processing Systems, 2025. (NeurIPS 2025). (\*Corresponding authors)
 - Yue Guan, Changming Yu, Shihan Fang, Weiming Hu, Zaifeng Pan, Zheng Wang, Zihan Liu, **Yangjie Zhou**, Yufei Ding, Minyi Guo, Jingwen Leng. [Yggdrasil: Bridging Dynamic Speculation and Static Runtime for Latency-Optimal Tree-Based LLM Decoding](#). The Thirty-Ninth Annual Conference on Neural Information Processing Systems, 2025. (NeurIPS 2025).

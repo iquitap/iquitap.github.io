@@ -1,3 +1,18 @@
 <!-- start custom footer snippets -->
 <a href="/sitemap/">Sitemap</a>
 <!-- end custom footer snippets -->
+
+<script>
+document.querySelectorAll('.pub-list a').forEach(function(a) {
+  if (a.getAttribute('href') === '#') {
+    // Remove link behavior, keep text
+    var span = document.createElement('span');
+    span.className = 'pub-title-nolink';
+    span.innerHTML = a.innerHTML;
+    a.parentNode.replaceChild(span, a);
+  } else {
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener');
+  }
+});
+</script>

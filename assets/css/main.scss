@@ -39,3 +39,121 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* ==========================================================================
+   Custom visual refinements
+   ========================================================================== */
+
+/* Author sidebar enhancements */
+.author__name {
+  color: #1a365d;
+  font-weight: 700;
+}
+
+.author__bio {
+  color: #4a5568;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.author__urls {
+  li {
+    i {
+      color: #2b6cb0;
+    }
+  }
+  a:hover {
+    color: #2b6cb0;
+  }
+}
+
+/* Footer refinement */
+.page__footer {
+  background-color: #f7fafc;
+  border-top: 2px solid #e2e8f0;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better link styling in content */
+.page__content a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s ease;
+
+  &:hover {
+    border-bottom-color: #2b6cb0;
+    text-decoration: none;
+  }
+}
+
+/* Bio section first paragraph emphasis */
+.page__content > p:first-of-type {
+  font-size: 1.05em;
+  line-height: 1.7;
+}
+
+/* Venue badge styling */
+.venue-badge {
+  display: inline-block;
+  padding: 1px 7px 2px;
+  margin-right: 5px;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: #fff;
+  background-color: #2b6cb0;
+  border-radius: 3px;
+  letter-spacing: 0.03em;
+  vertical-align: baseline;
+  position: relative;
+  top: -1px;
+}
+
+.venue-badge--top {
+  background-color: #1a365d;
+}
+
+.venue-badge--journal {
+  background-color: #4a6741;
+}
+
+.venue-badge--preprint {
+  background-color: #8b95a3;
+}
+
+/* No-link publication titles */
+.pub-title-nolink {
+  color: #2d3748;
+  cursor: default;
+}
+
+/* Highlight own name in publication author lists */
+.pub-list strong {
+  color: #1a365d;
+}
+
+/* News item date styling */
+.news-date {
+  display: inline-block;
+  font-weight: 600;
+  color: #1a365d;
+  font-size: 0.85em;
+  font-family: "SF Mono", Monaco, Consolas, monospace;
+  margin-right: 2px;
+}
+
+/* Work Experience & Education compact styling */
+.page__content > ul {
+  li {
+    line-height: 1.55;
+
+    ul li {
+      margin-bottom: 0.15em;
+      color: #4a5568;
+      font-size: 0.92em;
+    }
+  }
+}

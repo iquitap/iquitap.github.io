@@ -14,10 +14,14 @@
   margin-bottom: 1em;
 
   @include breakpoint($large) {
-    @include span(2 of 12);
+    @include span(3 of 12);
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
+    position: sticky;
+    top: 1.5em;
+    max-height: calc(100vh - 3em);
+    overflow-y: auto;
 
     &:hover {
       opacity: 1;
@@ -83,12 +87,13 @@
   }
 
   img {
-    max-width: 175px;
+    max-width: 200px;
     border-radius: 50%;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
+      padding: 4px;
+      border: 2px solid #e2e8f0;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     }
   }
 }
