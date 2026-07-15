@@ -77,6 +77,10 @@ My research interests include machine learning systems, high-performance computi
 
 <div class="pub-list" markdown="1">
 
+- <span class="venue-badge venue-badge--top">MICRO'26</span> **[GPU-Tile-Sim: A Tile-Centric GPU Simulation Framework for LLM Hardware-Software Co-Design](https://arxiv.org/abs/2607.11262)**  
+  Yitong Ding, Jiawei Huang, Renyang Guan, **Yangjie Zhou\***, Zihan Liu\*, Yu Feng, Shixuan Sun, Minyi Guo, Jingwen Leng, Jian Weng  
+  <small>The 57th IEEE/ACM International Symposium on Microarchitecture (\*Co-corresponding authors)</small>
+
 - <span class="venue-badge venue-badge--top">ACL'26</span> **[CuBridge: An LLM-Based Framework for Understanding and Reconstructing High-Performance Attention Kernels](https://arxiv.org/abs/2605.05023)**  
   Xing Ma^, **Yangjie Zhou^\***, Wu Sun, Zihan Liu, Jingwen Leng, Yun Lin*, Shixuan Sun, Minyi Guo, Jin Song Dong  
   <small>The 64th Annual Meeting of the Association for Computational Linguistics (^Co-first authors, \*Co-corresponding authors)</small>
