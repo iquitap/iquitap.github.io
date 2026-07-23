@@ -121,6 +121,10 @@ My research interests include machine learning systems, high-performance computi
   **Yangjie Zhou**, Jingwen Leng, Mengtian Yang, Zhihui Zhang, Yakai Wang, Chen Zhang, Minyi Guo, Yuhao Zhu  
   <small>ACM/IEEE Design Automation Conference (Poster)</small>
 
+- <span class="venue-badge venue-badge--top">DAC'26</span> **[eLLM: Elastic Memory Management Framework for Efficient LLM Serving](https://arxiv.org/abs/2506.15155)**  
+  Jiale Xu, Yi Xiong, Rui Zhang, Cong Guo, Zihan Liu, **Yangjie Zhou**, Weiming Hu, Hao Wu, Boyu Li, Junping Zhao, Minyi Guo, Zongwei Zhu, Xuehai Zhou, Jingwen Leng  
+  <small>The 63rd ACM/IEEE Design Automation Conference</small>
+
 - <span class="venue-badge venue-badge--top">ASPLOS'26</span> **[PD-Multiplexing: Towards High-Goodput LLM Serving with Prefill-decode Multiplexing](https://dl.acm.org/doi/10.1145/3779212.3790236)**  
   Yukang Chen, Weihao Cui, Han Zhao, Ziyi Xu, Xiaoze Fan, Xusheng Chen, **Yangjie Zhou**, Shixuan Sun, Bingsheng He, Quan Chen  
   <small>The 31st ACM International Conference on Architectural Support for Programming Languages and Operating Systems</small>
@@ -173,6 +177,7 @@ My research interests include machine learning systems, high-performance computi
 ==================== -->
 
 ## Honors and Services
+- 2027 AAAI Conference on Artificial Intelligence, Reviewer
 - 2027 IEEE International Symposium on High-Performance Computer Architecture, Program Committee
 - 2026 IEEE Transactions on Artificial Intelligence, Reviewer
 - 2026 Annual Meeting of the Association for Computational Linguistics, Reviewer
