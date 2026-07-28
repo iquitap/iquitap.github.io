@@ -26,6 +26,7 @@ My research interests include machine learning systems, high-performance computi
 <!-- ~~I am looking for a full-time job, please feel free to reach out to me.~~ -->
 
 ## News
+- <span class="news-date">[2026.07]</span> Our paper AlphaCu is accepted by ASE 2026.
 - <span class="news-date">[2026.07]</span> Our paper GPU-Tile-Sim is accepted by MICRO 2026. Congratulations to Yitong!
 - <span class="news-date">[2026.04]</span> Our paper CuBridge is accepted by ACL 2026. Congratulations to Xing Ma!
 - <span class="news-date">[2026.02]</span> Our paper eLLM is accepted by DAC 2026.
