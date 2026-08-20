@@ -78,6 +78,10 @@ My research interests include machine learning systems, high-performance computi
 
 <div class="pub-list" markdown="1">
 
+- <span class="venue-badge venue-badge--top">ASE'26</span> **AlphaCu: A Transformation-Driven Synthesis Framework for LLM-Based GPU Kernel Generation**  
+  **Yangjie Zhou**, Xing Ma, Zihan Liu, Qing Wang, Weihao Cui, Wu Sun, Hanjing Wang, Binhang Qi, Jingwen Leng, Yun Lin, Minyi Guo, Jin Song Dong  
+  <small>The 41st IEEE/ACM International Conference on Automated Software Engineering</small>
+
 - <span class="venue-badge venue-badge--top">MICRO'26</span> **[GPU-Tile-Sim: A Tile-Centric GPU Simulation Framework for LLM Hardware-Software Co-Design](https://arxiv.org/abs/2607.11262)**  
   Yitong Ding, Jiawei Huang, Renyang Guan, **Yangjie Zhou\***, Zihan Liu\*, Yu Feng, Shixuan Sun, Minyi Guo, Jingwen Leng, Jian Weng  
   <small>The 57th IEEE/ACM International Symposium on Microarchitecture (\*Co-corresponding authors)</small>
