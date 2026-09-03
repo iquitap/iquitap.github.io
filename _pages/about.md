@@ -184,6 +184,7 @@ My research interests include machine learning systems, high-performance computi
 ## Honors and Services
 - 2027 AAAI Conference on Artificial Intelligence, Reviewer
 - 2027 IEEE International Symposium on High-Performance Computer Architecture, Program Committee
+- 2026 HPC China, Program Committee
 - 2026 IEEE Transactions on Artificial Intelligence, Reviewer
 - 2026 Annual Meeting of the Association for Computational Linguistics, Reviewer
 - 2025 ACM Transactions on Embedded Computing Systems, Reviewer
